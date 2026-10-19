@@ -79,7 +79,30 @@ delay/noise, slow response, close starts, abrupt stopping, and independently
 mismatched command scale. Six additional runs use the actual route and default
 one-shot leader event manager with section switching.
 
-## Files
+## Drop-in compatibility check
+
+Both generated files were separately copied into isolated copies of the actual
+Shared Environment and loaded through `ta_experiment2_gui.Experiment2GUI`, with
+Qt offscreen. The actual `_control_step` processed synthetic `VehicleState`
+telemetry and in-memory command sinks. Both passed 34 command cycles covering
+active control, middle fallback, student bypass, re-entry, center-sensor safety,
+and new-run reset, with no controller-error fallback. Original Shared Environment
+files were verified unchanged by SHA-256. No physical/network clients were used.
+
+To repeat in the course folder:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-gui.txt
+.\.venv\Scripts\python.exe src/test_dropin.py
+```
+
+This check requires the full original `../Shared Environment` folder, including
+the TA GUI files, alongside the repository. The minimal `environment/` copy used
+by offline simulation does not include those GUI entry files. Detailed results:
+`simulation_results/dropin_checks.json`. GUI dependencies are optional for the
+simulation; `requirements-lock.txt` now records the full tested environment.
+
+## Project contents
 
 - `src/controller.py`: maintained standalone controller source.
 - `controllers/`: generated submission variants; rebuild after source changes.

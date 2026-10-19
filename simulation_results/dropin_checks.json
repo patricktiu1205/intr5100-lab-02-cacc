@@ -1,0 +1,41 @@
+{
+  "shared_environment_unchanged": true,
+  "results": [
+    {
+      "scale": 1.0,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\unscaled\\student_controller2.py",
+      "version": "unscaled"
+    },
+    {
+      "scale": 2.8,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\scaled_2p8\\student_controller2.py",
+      "version": "scaled_2p8"
+    }
+  ]
+}

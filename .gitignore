@@ -3,3 +3,4 @@ __pycache__/
 .mplconfig/
 References/*.pdf
 *.pdf
+.dropin_tmp/
