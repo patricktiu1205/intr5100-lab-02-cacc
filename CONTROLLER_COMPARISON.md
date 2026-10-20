@@ -1,5 +1,9 @@
 # Six-controller review and test plan
 
+Update: the subsequent [all-six closed-loop simulation](ALL_SIX_SIMULATION_REPORT.md)
+installed the optional MPC solver packages and ran all six unchanged. Dependency
+and fallback statements below describe the initial compatibility check.
+
 Reviewed 2026-10-20. The four groupmate files were relocated without changing
 their contents. Original filenames and SHA-256 hashes are recorded in
 `controllers/GROUPMATE_IMPORTS.json`.

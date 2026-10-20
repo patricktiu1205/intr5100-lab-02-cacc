@@ -6,7 +6,12 @@ behind an IDM-controlled middle vehicle and a prescribed-speed leader.
 The folder now also contains the groupmates' LQI and MPC pairs, preserved unchanged.
 See [six-controller analysis and test plan](CONTROLLER_COMPARISON.md) and the
 [submission index](controllers/README.md). Previous simulation results cover PID
-only; all-six integration results explicitly identify MPC's fallback mode.
+only; initial all-six integration results explicitly identify MPC's fallback mode.
+
+For the subsequent full closed-loop comparison, including active MPC optimizers,
+see [all-six simulation results](ALL_SIX_SIMULATION_REPORT.md). Reproduce with
+`src/simulate_all.py` followed by `src/report_all.py`. The six controller files
+remain unchanged.
 
 ## Status
 

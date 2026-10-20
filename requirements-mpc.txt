@@ -1,5 +1,5 @@
 # Optional: confirm the lab permits third-party student-controller packages first.
-# The MPC optimizer has not yet been tested with these packages installed here.
+# Used for the all-six offline comparison; package versions are in requirements-lock.txt.
 numpy
 cvxpy
 osqp

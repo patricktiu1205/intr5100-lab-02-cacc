@@ -1,0 +1,1564 @@
+[
+  {
+    "controller": "PID-1",
+    "plant_scale": 1.0,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 332.30000000008476,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 455,
+    "own_gap_rmse": 38.83489110170751,
+    "common_gap_rmse": 38.83489110170751,
+    "variation_ratio": 0.9080352255230317,
+    "acceleration_rms": 1.2780219494435927,
+    "jerk_rms": 4.007553208203797,
+    "mean_speed": 34.59558144687151,
+    "min_ttc": 31.19030346694745,
+    "internal_modes": {
+      "feedback": 455
+    },
+    "internal_reasons": {
+      "": 455
+    },
+    "import_ms": 0.7362999604083598,
+    "first_call_ms": 215.0905000162311,
+    "p95_call_ms": 0.9519300103420391
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 1.0,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 420.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 435,
+    "own_gap_rmse": 126.25663193538371,
+    "common_gap_rmse": 126.25663193538371,
+    "variation_ratio": 0.6725691215108552,
+    "acceleration_rms": 0.9542053966521405,
+    "jerk_rms": 3.2631214843082854,
+    "mean_speed": 34.23474811353816,
+    "min_ttc": 87.23902942561102,
+    "internal_modes": {
+      "feedback": 435
+    },
+    "internal_reasons": {
+      "": 435
+    },
+    "import_ms": 0.6997000309638679,
+    "first_call_ms": 224.93239998584613,
+    "p95_call_ms": 0.9392749925609678
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 1.0,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 302.1072707431322,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 458,
+    "own_gap_rmse": 37.99411836794869,
+    "common_gap_rmse": 37.99411836794869,
+    "variation_ratio": 1.0244372804842317,
+    "acceleration_rms": 1.286019548543735,
+    "jerk_rms": 4.291044525354026,
+    "mean_speed": 34.50224811353817,
+    "min_ttc": 29.890784814634436,
+    "internal_modes": {
+      "feedback": 458
+    },
+    "internal_reasons": {
+      "": 458
+    },
+    "import_ms": 3.7415000260807574,
+    "first_call_ms": 228.53369999211282,
+    "p95_call_ms": 0.9506000205874443
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 1.0,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 369.7001356601613,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 430,
+    "own_gap_rmse": 112.13659442777777,
+    "common_gap_rmse": 112.13659442777777,
+    "variation_ratio": 0.5913355031865047,
+    "acceleration_rms": 1.107411372684984,
+    "jerk_rms": 3.8799418636641345,
+    "mean_speed": 34.29308144687149,
+    "min_ttc": 62.337499945325966,
+    "internal_modes": {
+      "feedback": 430
+    },
+    "internal_reasons": {
+      "": 430
+    },
+    "import_ms": 3.8486000266857445,
+    "first_call_ms": 220.42660001898184,
+    "p95_call_ms": 0.9547199937514961
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 1.0,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 281.10000000000946,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 471,
+    "own_gap_rmse": 30.695654687247952,
+    "common_gap_rmse": 64.81360863405297,
+    "variation_ratio": 1.2755214271371371,
+    "acceleration_rms": 2.782408513889853,
+    "jerk_rms": 4.969452193740654,
+    "mean_speed": 34.82891478020484,
+    "min_ttc": 10.4608566011552,
+    "internal_modes": {
+      "mpc": 471
+    },
+    "internal_reasons": {
+      "optimal": 471
+    },
+    "import_ms": 4652.2856000228785,
+    "first_call_ms": 3.109100041911006,
+    "p95_call_ms": 1.405395017354749
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 1.0,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 336.3478637398148,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 452,
+    "own_gap_rmse": 96.97966211641943,
+    "common_gap_rmse": 40.75473252896918,
+    "variation_ratio": 0.8619325842759434,
+    "acceleration_rms": 1.458641366891821,
+    "jerk_rms": 4.973919365344867,
+    "mean_speed": 34.52308144687151,
+    "min_ttc": 25.427001394686922,
+    "internal_modes": {
+      "mpc": 452
+    },
+    "internal_reasons": {
+      "optimal": 452
+    },
+    "import_ms": 25.869100005365908,
+    "first_call_ms": 3.0962000018917024,
+    "p95_call_ms": 1.3976999907754362
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 1.0,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 323.58872181904735,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 463,
+    "own_gap_rmse": 48.23996299931215,
+    "common_gap_rmse": 48.23996299931215,
+    "variation_ratio": 0.8596581056160069,
+    "acceleration_rms": 1.6934625397472731,
+    "jerk_rms": 8.233503043614098,
+    "mean_speed": 34.471316082993155,
+    "min_ttc": 26.12662627343897,
+    "internal_modes": {
+      "feedback": 463
+    },
+    "internal_reasons": {
+      "": 463
+    },
+    "import_ms": 0.7994999759830534,
+    "first_call_ms": 238.50600002333522,
+    "p95_call_ms": 0.9637000039219856
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 1.0,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 418.0895752918077,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 443,
+    "own_gap_rmse": 133.23768109214512,
+    "common_gap_rmse": 133.23768109214512,
+    "variation_ratio": 0.6648135542645978,
+    "acceleration_rms": 0.9399242696709682,
+    "jerk_rms": 3.654691075777469,
+    "mean_speed": 34.127149416326475,
+    "min_ttc": 71.05261711264697,
+    "internal_modes": {
+      "feedback": 443
+    },
+    "internal_reasons": {
+      "": 443
+    },
+    "import_ms": 0.8666999638080597,
+    "first_call_ms": 223.5414000460878,
+    "p95_call_ms": 0.9866550070000812
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 1.0,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 288.212129790023,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 466,
+    "own_gap_rmse": 48.657410640162865,
+    "common_gap_rmse": 48.657410640162865,
+    "variation_ratio": 0.9621310727328268,
+    "acceleration_rms": 1.5312174844035153,
+    "jerk_rms": 5.687332903965378,
+    "mean_speed": 34.37464941632649,
+    "min_ttc": 24.88965497388065,
+    "internal_modes": {
+      "feedback": 466
+    },
+    "internal_reasons": {
+      "": 466
+    },
+    "import_ms": 0.8609999786131084,
+    "first_call_ms": 236.4917999948375,
+    "p95_call_ms": 0.9642599616199732
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 1.0,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 354.418899467104,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 437,
+    "own_gap_rmse": 116.14172363235964,
+    "common_gap_rmse": 116.14172363235964,
+    "variation_ratio": 0.6399443362510941,
+    "acceleration_rms": 1.1115259675314229,
+    "jerk_rms": 3.868646192293426,
+    "mean_speed": 34.17631608299314,
+    "min_ttc": 54.20118352986716,
+    "internal_modes": {
+      "feedback": 437
+    },
+    "internal_reasons": {
+      "": 437
+    },
+    "import_ms": 0.8654000121168792,
+    "first_call_ms": 245.47379999421537,
+    "p95_call_ms": 0.9577000164426863
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 1.0,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 275.44582274933964,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 477,
+    "own_gap_rmse": 37.21500603546924,
+    "common_gap_rmse": 66.58739842554904,
+    "variation_ratio": 1.315003793259595,
+    "acceleration_rms": 3.5597223105358835,
+    "jerk_rms": 7.478199895822023,
+    "mean_speed": 34.70048274965982,
+    "min_ttc": 8.282640004214075,
+    "internal_modes": {
+      "mpc": 477
+    },
+    "internal_reasons": {
+      "optimal": 477
+    },
+    "import_ms": 22.33649999834597,
+    "first_call_ms": 3.1902999617159367,
+    "p95_call_ms": 1.4447750290855765
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 1.0,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 328.84258553067957,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 459,
+    "own_gap_rmse": 101.75065563862402,
+    "common_gap_rmse": 48.89871496880517,
+    "variation_ratio": 0.8174692533900296,
+    "acceleration_rms": 2.1539992193592505,
+    "jerk_rms": 6.951685821202758,
+    "mean_speed": 34.397149416326485,
+    "min_ttc": 18.135876794645625,
+    "internal_modes": {
+      "mpc": 459
+    },
+    "internal_reasons": {
+      "optimal": 459
+    },
+    "import_ms": 22.89969997946173,
+    "first_call_ms": 2.6641999720595777,
+    "p95_call_ms": 1.4550000109011307
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 1.0,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 327.1578138390669,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 460,
+    "own_gap_rmse": 51.03137637076214,
+    "common_gap_rmse": 51.03137637076214,
+    "variation_ratio": 0.8434523381627849,
+    "acceleration_rms": 1.1092427205537898,
+    "jerk_rms": 2.0846121495054972,
+    "mean_speed": 34.57226535159846,
+    "min_ttc": 27.426503310559966,
+    "internal_modes": {
+      "feedback": 460
+    },
+    "internal_reasons": {
+      "": 460
+    },
+    "import_ms": 0.9781999979168177,
+    "first_call_ms": 251.34809996234253,
+    "p95_call_ms": 0.9609899832867086
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 1.0,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 420.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 439,
+    "own_gap_rmse": 139.13946994858125,
+    "common_gap_rmse": 139.13946994858125,
+    "variation_ratio": 0.6212235401533454,
+    "acceleration_rms": 0.7063469444224615,
+    "jerk_rms": 1.479841504208122,
+    "mean_speed": 34.20809868493177,
+    "min_ttc": 70.08869651718379,
+    "internal_modes": {
+      "feedback": 439
+    },
+    "internal_reasons": {
+      "": 439
+    },
+    "import_ms": 0.7939999923110008,
+    "first_call_ms": 216.07640001457185,
+    "p95_call_ms": 0.9639350057113915
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 1.0,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 279.30313430489514,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 462,
+    "own_gap_rmse": 51.43842122649449,
+    "common_gap_rmse": 51.43842122649449,
+    "variation_ratio": 0.9551900230276239,
+    "acceleration_rms": 1.0883862134438633,
+    "jerk_rms": 2.085659795046384,
+    "mean_speed": 34.47476535159846,
+    "min_ttc": 24.002959967449197,
+    "internal_modes": {
+      "feedback": 462
+    },
+    "internal_reasons": {
+      "": 462
+    },
+    "import_ms": 1.4771000132896006,
+    "first_call_ms": 220.01689998432994,
+    "p95_call_ms": 0.9615999879315495
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 1.0,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 355.80200855629664,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 434,
+    "own_gap_rmse": 121.04987357901993,
+    "common_gap_rmse": 121.04987357901993,
+    "variation_ratio": 0.5880631217545672,
+    "acceleration_rms": 0.8057199109061571,
+    "jerk_rms": 1.6674617919657688,
+    "mean_speed": 34.26559868493709,
+    "min_ttc": 46.766479798290426,
+    "internal_modes": {
+      "feedback": 434
+    },
+    "internal_reasons": {
+      "": 434
+    },
+    "import_ms": 1.7687000217847526,
+    "first_call_ms": 240.84560002665967,
+    "p95_call_ms": 0.9544199914671481
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 1.0,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 273.70729471066625,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 474,
+    "own_gap_rmse": 37.88601820780244,
+    "common_gap_rmse": 66.34950278251469,
+    "variation_ratio": 1.349999284927313,
+    "acceleration_rms": 2.694740437556285,
+    "jerk_rms": 3.248965244964335,
+    "mean_speed": 34.79726535159749,
+    "min_ttc": 9.83386757864274,
+    "internal_modes": {
+      "mpc": 474
+    },
+    "internal_reasons": {
+      "optimal": 474
+    },
+    "import_ms": 22.907499980647117,
+    "first_call_ms": 3.0254999874159694,
+    "p95_call_ms": 1.485899998806417
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 1.0,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 333.5327083729517,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 456,
+    "own_gap_rmse": 104.65996776374037,
+    "common_gap_rmse": 51.599396426699855,
+    "variation_ratio": 0.8065218556921231,
+    "acceleration_rms": 1.3018984089320684,
+    "jerk_rms": 2.5320183537630148,
+    "mean_speed": 34.49143201826549,
+    "min_ttc": 23.407319578365676,
+    "internal_modes": {
+      "mpc": 456
+    },
+    "internal_reasons": {
+      "optimal": 456
+    },
+    "import_ms": 22.684400028083473,
+    "first_call_ms": 2.74389999685809,
+    "p95_call_ms": 1.4098800078500062
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 1.0,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 457,
+    "own_gap_rmse": 57.282830533762606,
+    "common_gap_rmse": 57.282830533762606,
+    "variation_ratio": 0.5486311567166271,
+    "acceleration_rms": 1.6254230028981493,
+    "jerk_rms": 4.864854850495491,
+    "mean_speed": 33.511414780204824,
+    "min_ttc": 31.634860490454017,
+    "internal_modes": {
+      "feedback": 457
+    },
+    "internal_reasons": {
+      "": 457
+    },
+    "import_ms": 0.8464000420644879,
+    "first_call_ms": 214.7539999568835,
+    "p95_call_ms": 0.9870499925455078
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 1.0,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 456,
+    "own_gap_rmse": 106.90119198113298,
+    "common_gap_rmse": 106.90119198113298,
+    "variation_ratio": 0.529930406612456,
+    "acceleration_rms": 1.212247547216446,
+    "jerk_rms": 3.973548218418376,
+    "mean_speed": 33.11391478020482,
+    "min_ttc": 86.96502748513595,
+    "internal_modes": {
+      "feedback": 456
+    },
+    "internal_reasons": {
+      "": 456
+    },
+    "import_ms": 0.8227000362239778,
+    "first_call_ms": 236.28770001232624,
+    "p95_call_ms": 0.931609992403537
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 1.0,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 445,
+    "own_gap_rmse": 64.9135973218294,
+    "common_gap_rmse": 64.9135973218294,
+    "variation_ratio": 0.834032092104116,
+    "acceleration_rms": 1.7200123937389171,
+    "jerk_rms": 4.853469355540218,
+    "mean_speed": 33.40724811353816,
+    "min_ttc": 25.522544711823045,
+    "internal_modes": {
+      "feedback": 445
+    },
+    "internal_reasons": {
+      "": 445
+    },
+    "import_ms": 1.5175000298768282,
+    "first_call_ms": 220.0345000019297,
+    "p95_call_ms": 0.9871750080492346
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 1.0,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 437,
+    "own_gap_rmse": 108.2976014156318,
+    "common_gap_rmse": 108.2976014156318,
+    "variation_ratio": 0.49414040980437346,
+    "acceleration_rms": 1.4775032647791533,
+    "jerk_rms": 5.165010877057474,
+    "mean_speed": 33.17224811353816,
+    "min_ttc": 70.34642542981739,
+    "internal_modes": {
+      "feedback": 437
+    },
+    "internal_reasons": {
+      "": 437
+    },
+    "import_ms": 1.0309999925084412,
+    "first_call_ms": 230.84380000364035,
+    "p95_call_ms": 0.9522749751340598
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 1.0,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 471,
+    "own_gap_rmse": 30.812807667947897,
+    "common_gap_rmse": 72.75203651129571,
+    "variation_ratio": 0.8987339610520042,
+    "acceleration_rms": 3.1703017275397234,
+    "jerk_rms": 6.266104856441004,
+    "mean_speed": 33.74558144687149,
+    "min_ttc": 10.494790535199995,
+    "internal_modes": {
+      "mpc": 471
+    },
+    "internal_reasons": {
+      "optimal": 471
+    },
+    "import_ms": 23.01239996450022,
+    "first_call_ms": 2.7012000209651887,
+    "p95_call_ms": 1.4261099742725492
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 1.0,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 458,
+    "own_gap_rmse": 81.51790984996552,
+    "common_gap_rmse": 52.807472001050456,
+    "variation_ratio": 0.5474988629787986,
+    "acceleration_rms": 2.1630051967279242,
+    "jerk_rms": 7.094234625767893,
+    "mean_speed": 33.43974811353816,
+    "min_ttc": 27.326909280074222,
+    "internal_modes": {
+      "mpc": 458
+    },
+    "internal_reasons": {
+      "optimal": 458
+    },
+    "import_ms": 22.81509997555986,
+    "first_call_ms": 2.880499989259988,
+    "p95_call_ms": 1.3855000142939389
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 1.0,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 324.1179179234905,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 513,
+    "own_gap_rmse": 35.06913521985379,
+    "common_gap_rmse": 35.06913521985379,
+    "variation_ratio": 0.8916773949238574,
+    "acceleration_rms": 2.3322304465939174,
+    "jerk_rms": 4.738175006917818,
+    "mean_speed": 33.13333333333337,
+    "min_ttc": 33.670417700419975,
+    "internal_modes": {
+      "feedback": 513
+    },
+    "internal_reasons": {
+      "": 513
+    },
+    "import_ms": 0.8545000455342233,
+    "first_call_ms": 215.13780002715066,
+    "p95_call_ms": 0.9612600173568353
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 1.0,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 413.6483468448646,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 495,
+    "own_gap_rmse": 115.11341657953943,
+    "common_gap_rmse": 115.11341657953943,
+    "variation_ratio": 0.8106227719472633,
+    "acceleration_rms": 2.1411096038050137,
+    "jerk_rms": 4.108689016252797,
+    "mean_speed": 32.77250000000003,
+    "min_ttc": 58.2979195094657,
+    "internal_modes": {
+      "feedback": 495
+    },
+    "internal_reasons": {
+      "": 495
+    },
+    "import_ms": 0.9405000018887222,
+    "first_call_ms": 240.00079999677837,
+    "p95_call_ms": 0.9502799803158268
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 1.0,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 306.0387652075797,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 517,
+    "own_gap_rmse": 33.5651151616551,
+    "common_gap_rmse": 33.5651151616551,
+    "variation_ratio": 0.9029411830572324,
+    "acceleration_rms": 2.4601950310728653,
+    "jerk_rms": 5.10677591279196,
+    "mean_speed": 33.0541666666667,
+    "min_ttc": 32.85989314626797,
+    "internal_modes": {
+      "feedback": 517
+    },
+    "internal_reasons": {
+      "": 517
+    },
+    "import_ms": 1.063200004864484,
+    "first_call_ms": 235.02090002875775,
+    "p95_call_ms": 0.9592250135028735
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 1.0,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 385.9000052600004,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 494,
+    "own_gap_rmse": 103.53297793906363,
+    "common_gap_rmse": 103.53297793906363,
+    "variation_ratio": 0.8047833521965131,
+    "acceleration_rms": 2.368027762300319,
+    "jerk_rms": 4.891579246313049,
+    "mean_speed": 32.775833333333516,
+    "min_ttc": 74.36960549237304,
+    "internal_modes": {
+      "feedback": 494
+    },
+    "internal_reasons": {
+      "": 494
+    },
+    "import_ms": 0.8796000038273633,
+    "first_call_ms": 242.46059998404235,
+    "p95_call_ms": 0.9403400006704032
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 1.0,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 254.08588007153685,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 523,
+    "own_gap_rmse": 28.741532879901087,
+    "common_gap_rmse": 63.7904683194143,
+    "variation_ratio": 1.1274057559834563,
+    "acceleration_rms": 3.4965322605772102,
+    "jerk_rms": 5.687998158113351,
+    "mean_speed": 33.3725,
+    "min_ttc": 10.604560117358263,
+    "internal_modes": {
+      "mpc": 523
+    },
+    "internal_reasons": {
+      "optimal": 523
+    },
+    "import_ms": 22.131500008981675,
+    "first_call_ms": 2.7051999932155013,
+    "p95_call_ms": 1.407680008560419
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 1.0,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 309.2742401957212,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 513,
+    "own_gap_rmse": 86.99887746911728,
+    "common_gap_rmse": 34.03675319267819,
+    "variation_ratio": 0.8016370799092994,
+    "acceleration_rms": 2.3627601024206495,
+    "jerk_rms": 5.961025056072334,
+    "mean_speed": 33.06666666666671,
+    "min_ttc": 27.8515154744714,
+    "internal_modes": {
+      "mpc": 513
+    },
+    "internal_reasons": {
+      "optimal": 513
+    },
+    "import_ms": 22.04930002335459,
+    "first_call_ms": 2.7331000310368836,
+    "p95_call_ms": 1.4522449986543506
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 2.8,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 334.09742752234706,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 530,
+    "own_gap_rmse": 100.27475698516393,
+    "common_gap_rmse": 100.27475698516393,
+    "variation_ratio": 0.9670492693425111,
+    "acceleration_rms": 4.7550780476293815,
+    "jerk_rms": 12.944849593227335,
+    "mean_speed": 95.886,
+    "min_ttc": 11.142050928122568,
+    "internal_modes": {
+      "feedback": 530
+    },
+    "internal_reasons": {
+      "": 530
+    },
+    "import_ms": 0.8200000156648457,
+    "first_call_ms": 262.57650001207367,
+    "p95_call_ms": 1.3894599862396717
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 2.8,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 397.44839524168856,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 505,
+    "own_gap_rmse": 49.60737889476228,
+    "common_gap_rmse": 49.60737889476228,
+    "variation_ratio": 0.8885676966411892,
+    "acceleration_rms": 3.4533387641642617,
+    "jerk_rms": 11.234798264872312,
+    "mean_speed": 95.371864743303,
+    "min_ttc": 27.102756775993328,
+    "internal_modes": {
+      "feedback": 505
+    },
+    "internal_reasons": {
+      "": 505
+    },
+    "import_ms": 0.8482999983243644,
+    "first_call_ms": 238.26300003565848,
+    "p95_call_ms": 0.9655899775680152
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 2.8,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 306.20750401002806,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 530,
+    "own_gap_rmse": 104.58802353307856,
+    "common_gap_rmse": 104.58802353307856,
+    "variation_ratio": 0.9642630798277698,
+    "acceleration_rms": 4.806349544378794,
+    "jerk_rms": 14.779796825936646,
+    "mean_speed": 95.87666666666667,
+    "min_ttc": 11.505841004637784,
+    "internal_modes": {
+      "feedback": 530
+    },
+    "internal_reasons": {
+      "": 530
+    },
+    "import_ms": 1.6777999699115753,
+    "first_call_ms": 217.99000003375113,
+    "p95_call_ms": 1.0025999741628766
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 2.8,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 376.1320462077201,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 510,
+    "own_gap_rmse": 52.72970391029293,
+    "common_gap_rmse": 52.72970391029293,
+    "variation_ratio": 0.9114702490266408,
+    "acceleration_rms": 3.8519182427590475,
+    "jerk_rms": 13.483790245357387,
+    "mean_speed": 95.34068368745285,
+    "min_ttc": 25.22649321492263,
+    "internal_modes": {
+      "feedback": 510
+    },
+    "internal_reasons": {
+      "": 510
+    },
+    "import_ms": 0.7987000280991197,
+    "first_call_ms": 241.96100002154708,
+    "p95_call_ms": 0.9655000059865412
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 2.8,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 268.339033947399,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 546,
+    "own_gap_rmse": 66.98567949359607,
+    "common_gap_rmse": 166.33981784567266,
+    "variation_ratio": 1.1065173637556183,
+    "acceleration_rms": 9.447344107248568,
+    "jerk_rms": 17.1814595261644,
+    "mean_speed": 96.187,
+    "min_ttc": 3.7990235650701587,
+    "internal_modes": {
+      "mpc": 546
+    },
+    "internal_reasons": {
+      "optimal": 546
+    },
+    "import_ms": 22.73550000973046,
+    "first_call_ms": 2.82550003612414,
+    "p95_call_ms": 1.628719980362802
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 2.8,
+    "case": "nominal",
+    "collision": false,
+    "min_gap": 311.4503619119405,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 526,
+    "own_gap_rmse": 30.143409526318088,
+    "common_gap_rmse": 99.78948908416973,
+    "variation_ratio": 0.9427472459900829,
+    "acceleration_rms": 5.228350137953799,
+    "jerk_rms": 15.320991214016397,
+    "mean_speed": 95.83233333333332,
+    "min_ttc": 8.460382331681659,
+    "internal_modes": {
+      "mpc": 526
+    },
+    "internal_reasons": {
+      "optimal": 526
+    },
+    "import_ms": 27.30009995866567,
+    "first_call_ms": 2.788199984934181,
+    "p95_call_ms": 1.789639960043132
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 2.8,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 320.7591740214302,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 534,
+    "own_gap_rmse": 99.8693373846888,
+    "common_gap_rmse": 99.8693373846888,
+    "variation_ratio": 0.9365330235172196,
+    "acceleration_rms": 5.9627770994827705,
+    "jerk_rms": 23.33339870511753,
+    "mean_speed": 95.94333629183384,
+    "min_ttc": 9.267906886109955,
+    "internal_modes": {
+      "feedback": 534
+    },
+    "internal_reasons": {
+      "": 534
+    },
+    "import_ms": 1.4002000098116696,
+    "first_call_ms": 228.57969999313354,
+    "p95_call_ms": 1.0150999878533185
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 2.8,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 382.5590499000955,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 509,
+    "own_gap_rmse": 58.8222584868127,
+    "common_gap_rmse": 58.8222584868127,
+    "variation_ratio": 0.8436009784358566,
+    "acceleration_rms": 3.8420846854193376,
+    "jerk_rms": 14.461932990472295,
+    "mean_speed": 95.41795956772361,
+    "min_ttc": 18.212540630452267,
+    "internal_modes": {
+      "feedback": 509
+    },
+    "internal_reasons": {
+      "": 509
+    },
+    "import_ms": 0.8385000401176512,
+    "first_call_ms": 232.46450000442564,
+    "p95_call_ms": 0.9395899949595332
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 2.8,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 293.2667548934987,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 533,
+    "own_gap_rmse": 105.46128449214106,
+    "common_gap_rmse": 105.46128449214106,
+    "variation_ratio": 0.9217448330576398,
+    "acceleration_rms": 5.493393742364043,
+    "jerk_rms": 17.03006265295954,
+    "mean_speed": 95.9453367248316,
+    "min_ttc": 9.569949180409441,
+    "internal_modes": {
+      "feedback": 533
+    },
+    "internal_reasons": {
+      "": 533
+    },
+    "import_ms": 0.8957000100053847,
+    "first_call_ms": 222.54039999097586,
+    "p95_call_ms": 0.9480700013227761
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 2.8,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 365.665649006105,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 513,
+    "own_gap_rmse": 64.00416086623731,
+    "common_gap_rmse": 64.00416086623731,
+    "variation_ratio": 0.857247137901928,
+    "acceleration_rms": 4.1309155562446715,
+    "jerk_rms": 14.559971022957383,
+    "mean_speed": 95.40704972619803,
+    "min_ttc": 21.305306887113296,
+    "internal_modes": {
+      "feedback": 513
+    },
+    "internal_reasons": {
+      "": 513
+    },
+    "import_ms": 1.0583000257611275,
+    "first_call_ms": 235.29229999985546,
+    "p95_call_ms": 1.136270011193119
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 2.8,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 252.44149368682702,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 550,
+    "own_gap_rmse": 68.37168530577459,
+    "common_gap_rmse": 166.39071247187658,
+    "variation_ratio": 1.1519817219480237,
+    "acceleration_rms": 14.110364508278135,
+    "jerk_rms": 30.30937374286796,
+    "mean_speed": 96.25308649105573,
+    "min_ttc": 2.8439966347524694,
+    "internal_modes": {
+      "mpc": 549,
+      "fallback": 1
+    },
+    "internal_reasons": {
+      "optimal": 549,
+      "constraint_check_failed": 1
+    },
+    "import_ms": 21.469599974807352,
+    "first_call_ms": 2.7652999851852655,
+    "p95_call_ms": 1.5882600098848343
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 2.8,
+    "case": "delay_noise",
+    "collision": false,
+    "min_gap": 296.10259844561006,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 530,
+    "own_gap_rmse": 35.8703721319031,
+    "common_gap_rmse": 98.30600581790095,
+    "variation_ratio": 0.9295349368177795,
+    "acceleration_rms": 8.871495146583833,
+    "jerk_rms": 25.738389091086578,
+    "mean_speed": 95.89155645984481,
+    "min_ttc": 6.2867805537672625,
+    "internal_modes": {
+      "mpc": 530
+    },
+    "internal_reasons": {
+      "optimal": 530
+    },
+    "import_ms": 21.915599994827062,
+    "first_call_ms": 2.6911000022664666,
+    "p95_call_ms": 1.5699000097811218
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 2.8,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 323.00743262161814,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 533,
+    "own_gap_rmse": 98.20070820489227,
+    "common_gap_rmse": 98.20070820489227,
+    "variation_ratio": 0.9379357386796505,
+    "acceleration_rms": 4.192659116064679,
+    "jerk_rms": 8.458756734907059,
+    "mean_speed": 96.05633333333336,
+    "min_ttc": 11.99921217871372,
+    "internal_modes": {
+      "feedback": 533
+    },
+    "internal_reasons": {
+      "": 533
+    },
+    "import_ms": 1.1120999697595835,
+    "first_call_ms": 214.306200039573,
+    "p95_call_ms": 0.9784149995539337
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 2.8,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 381.55750354206066,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 508,
+    "own_gap_rmse": 60.3317682660723,
+    "common_gap_rmse": 60.3317682660723,
+    "variation_ratio": 0.8453879035197415,
+    "acceleration_rms": 2.771310097812761,
+    "jerk_rms": 5.665360344971911,
+    "mean_speed": 95.52433333333335,
+    "min_ttc": 23.83460505313798,
+    "internal_modes": {
+      "feedback": 508
+    },
+    "internal_reasons": {
+      "": 508
+    },
+    "import_ms": 0.8169999928213656,
+    "first_call_ms": 217.01570000732318,
+    "p95_call_ms": 1.1207399773411453
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 2.8,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 293.813033656088,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 533,
+    "own_gap_rmse": 105.3218800447929,
+    "common_gap_rmse": 105.3218800447929,
+    "variation_ratio": 0.9309973820240625,
+    "acceleration_rms": 4.122676692810257,
+    "jerk_rms": 8.413285834336085,
+    "mean_speed": 96.06337211685278,
+    "min_ttc": 11.693104366690099,
+    "internal_modes": {
+      "feedback": 533
+    },
+    "internal_reasons": {
+      "": 533
+    },
+    "import_ms": 1.3094000169076025,
+    "first_call_ms": 229.89930002950132,
+    "p95_call_ms": 0.9517400292679667
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 2.8,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 362.8633226552374,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 512,
+    "own_gap_rmse": 64.70092522831884,
+    "common_gap_rmse": 64.70092522831884,
+    "variation_ratio": 0.8565491700364029,
+    "acceleration_rms": 2.8637747993083025,
+    "jerk_rms": 6.632195491248509,
+    "mean_speed": 95.50800000000002,
+    "min_ttc": 21.95139071864901,
+    "internal_modes": {
+      "feedback": 512
+    },
+    "internal_reasons": {
+      "": 512
+    },
+    "import_ms": 0.8338000043295324,
+    "first_call_ms": 219.7372000082396,
+    "p95_call_ms": 0.9697499917820096
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 2.8,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 252.47214580428044,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 549,
+    "own_gap_rmse": 67.33237531712146,
+    "common_gap_rmse": 165.68405913214414,
+    "variation_ratio": 1.114240826192101,
+    "acceleration_rms": 9.627754609990554,
+    "jerk_rms": 13.273174844705993,
+    "mean_speed": 96.37366666666668,
+    "min_ttc": 4.117326106475003,
+    "internal_modes": {
+      "mpc": 549
+    },
+    "internal_reasons": {
+      "optimal": 549
+    },
+    "import_ms": 21.7187000089325,
+    "first_call_ms": 2.6818999904207885,
+    "p95_call_ms": 1.4358500106027348
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 2.8,
+    "case": "slow_response",
+    "collision": false,
+    "min_gap": 299.38843681527396,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 529,
+    "own_gap_rmse": 36.42203083506129,
+    "common_gap_rmse": 96.20726700269621,
+    "variation_ratio": 0.9280080415117931,
+    "acceleration_rms": 5.0403869888723065,
+    "jerk_rms": 9.444313837380308,
+    "mean_speed": 96.00266666500366,
+    "min_ttc": 9.235667224317575,
+    "internal_modes": {
+      "mpc": 529
+    },
+    "internal_reasons": {
+      "optimal": 529
+    },
+    "import_ms": 21.716599992942065,
+    "first_call_ms": 2.7969999937340617,
+    "p95_call_ms": 1.8209349742392076
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 2.8,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 531,
+    "own_gap_rmse": 108.85766933781483,
+    "common_gap_rmse": 108.85766933781483,
+    "variation_ratio": 0.8908636571242705,
+    "acceleration_rms": 5.429339001284615,
+    "jerk_rms": 14.534569638526772,
+    "mean_speed": 94.80333333333333,
+    "min_ttc": 11.86908368833112,
+    "internal_modes": {
+      "feedback": 531
+    },
+    "internal_reasons": {
+      "": 531
+    },
+    "import_ms": 1.078799949027598,
+    "first_call_ms": 254.52339998446405,
+    "p95_call_ms": 1.0205349972238762
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 2.8,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 514,
+    "own_gap_rmse": 68.64750326139175,
+    "common_gap_rmse": 68.64750326139175,
+    "variation_ratio": 0.8537996392693076,
+    "acceleration_rms": 4.124794198885471,
+    "jerk_rms": 13.044008184229785,
+    "mean_speed": 94.28785279609792,
+    "min_ttc": 30.409385698065268,
+    "internal_modes": {
+      "feedback": 514
+    },
+    "internal_reasons": {
+      "": 514
+    },
+    "import_ms": 0.8456000359728932,
+    "first_call_ms": 209.28180002374575,
+    "p95_call_ms": 1.0886399657465518
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 2.8,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 528,
+    "own_gap_rmse": 111.52247183701378,
+    "common_gap_rmse": 111.52247183701378,
+    "variation_ratio": 0.8796788833366547,
+    "acceleration_rms": 5.564826052858771,
+    "jerk_rms": 16.36892481696425,
+    "mean_speed": 94.794,
+    "min_ttc": 10.556355138205042,
+    "internal_modes": {
+      "feedback": 528
+    },
+    "internal_reasons": {
+      "": 528
+    },
+    "import_ms": 0.824199989438057,
+    "first_call_ms": 225.18700000364333,
+    "p95_call_ms": 0.9802699903957544
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 2.8,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 514,
+    "own_gap_rmse": 70.61731644102002,
+    "common_gap_rmse": 70.61731644102002,
+    "variation_ratio": 0.8546683666420515,
+    "acceleration_rms": 4.550640464688303,
+    "jerk_rms": 15.26790731700318,
+    "mean_speed": 94.25763320815436,
+    "min_ttc": 28.1638885042628,
+    "internal_modes": {
+      "feedback": 514
+    },
+    "internal_reasons": {
+      "": 514
+    },
+    "import_ms": 0.8106000022962689,
+    "first_call_ms": 244.7451000334695,
+    "p95_call_ms": 1.1203599744476378
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 2.8,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 546,
+    "own_gap_rmse": 68.44766660614108,
+    "common_gap_rmse": 166.05542688561624,
+    "variation_ratio": 1.009103276153914,
+    "acceleration_rms": 10.541384181795854,
+    "jerk_rms": 20.967166145658965,
+    "mean_speed": 95.10433333333332,
+    "min_ttc": 3.79170607679961,
+    "internal_modes": {
+      "mpc": 546
+    },
+    "internal_reasons": {
+      "optimal": 546
+    },
+    "import_ms": 26.693600055295974,
+    "first_call_ms": 2.731400018092245,
+    "p95_call_ms": 1.839039998594671
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 2.8,
+    "case": "close_start",
+    "collision": false,
+    "min_gap": 160.0,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 527,
+    "own_gap_rmse": 35.97330986271014,
+    "common_gap_rmse": 107.11745913639737,
+    "variation_ratio": 0.8748281008453204,
+    "acceleration_rms": 6.968789838226426,
+    "jerk_rms": 21.499833703137103,
+    "mean_speed": 94.74966666666664,
+    "min_ttc": 9.08530353977163,
+    "internal_modes": {
+      "mpc": 527
+    },
+    "internal_reasons": {
+      "optimal": 527
+    },
+    "import_ms": 24.044499965384603,
+    "first_call_ms": 2.7633000281639397,
+    "p95_call_ms": 1.4819250209257007
+  },
+  {
+    "controller": "PID-1",
+    "plant_scale": 2.8,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 334.0974275223198,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 479,
+    "own_gap_rmse": 96.26892965595282,
+    "common_gap_rmse": 96.26892965595282,
+    "variation_ratio": 0.9731062495404278,
+    "acceleration_rms": 8.892436369846775,
+    "jerk_rms": 18.41332818949641,
+    "mean_speed": 91.1283333354614,
+    "min_ttc": 11.120347242955477,
+    "internal_modes": {
+      "feedback": 479
+    },
+    "internal_reasons": {
+      "": 479
+    },
+    "import_ms": 0.8575999527238309,
+    "first_call_ms": 216.12619998632,
+    "p95_call_ms": 0.9816400153795256
+  },
+  {
+    "controller": "PID-2.8",
+    "plant_scale": 2.8,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 397.448395241654,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 454,
+    "own_gap_rmse": 52.0553562726196,
+    "common_gap_rmse": 52.0553562726196,
+    "variation_ratio": 0.87581185307093,
+    "acceleration_rms": 8.260859032435032,
+    "jerk_rms": 16.997848505547974,
+    "mean_speed": 90.6278295699273,
+    "min_ttc": 27.12502222122886,
+    "internal_modes": {
+      "feedback": 454
+    },
+    "internal_reasons": {
+      "": 454
+    },
+    "import_ms": 0.9510999661870301,
+    "first_call_ms": 229.54150004079565,
+    "p95_call_ms": 0.9163799928501247
+  },
+  {
+    "controller": "LQI-1",
+    "plant_scale": 2.8,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 306.7236842050097,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 479,
+    "own_gap_rmse": 101.46557094915343,
+    "common_gap_rmse": 101.46557094915343,
+    "variation_ratio": 0.9699066047974281,
+    "acceleration_rms": 8.917720159417373,
+    "jerk_rms": 19.713685703719047,
+    "mean_speed": 91.11900000212806,
+    "min_ttc": 11.429843227019356,
+    "internal_modes": {
+      "feedback": 479
+    },
+    "internal_reasons": {
+      "": 479
+    },
+    "import_ms": 0.9067000355571508,
+    "first_call_ms": 237.43340000510216,
+    "p95_call_ms": 1.1249600094743073
+  },
+  {
+    "controller": "LQI-2.8",
+    "plant_scale": 2.8,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 376.16853034177984,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 459,
+    "own_gap_rmse": 55.31114719535474,
+    "common_gap_rmse": 55.31114719535474,
+    "variation_ratio": 0.9047047677281015,
+    "acceleration_rms": 8.416215704259276,
+    "jerk_rms": 18.134627726024675,
+    "mean_speed": 90.60880887623225,
+    "min_ttc": 25.176439263182285,
+    "internal_modes": {
+      "feedback": 459
+    },
+    "internal_reasons": {
+      "": 459
+    },
+    "import_ms": 0.8920999825932086,
+    "first_call_ms": 215.09259997401386,
+    "p95_call_ms": 0.9520950232399626
+  },
+  {
+    "controller": "MPC-1",
+    "plant_scale": 2.8,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 268.33903394737536,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 495,
+    "own_gap_rmse": 64.55271082584707,
+    "common_gap_rmse": 161.9381129777285,
+    "variation_ratio": 1.1337103596482414,
+    "acceleration_rms": 12.073954554526354,
+    "jerk_rms": 21.630363945893354,
+    "mean_speed": 91.42933333333332,
+    "min_ttc": 3.7871258405018025,
+    "internal_modes": {
+      "mpc": 495
+    },
+    "internal_reasons": {
+      "optimal": 495
+    },
+    "import_ms": 23.019999964162707,
+    "first_call_ms": 2.8924000216647983,
+    "p95_call_ms": 1.5442549978615707
+  },
+  {
+    "controller": "MPC-2.8",
+    "plant_scale": 2.8,
+    "case": "hard_brake",
+    "collision": false,
+    "min_gap": 311.450361911895,
+    "shield_samples": 0,
+    "wrapper_errors": 0,
+    "active_samples": 475,
+    "own_gap_rmse": 31.56717147665234,
+    "common_gap_rmse": 97.48092377664723,
+    "variation_ratio": 0.9443347297213717,
+    "acceleration_rms": 9.14370949257831,
+    "jerk_rms": 20.2128371415005,
+    "mean_speed": 91.07466666666664,
+    "min_ttc": 8.573735134144775,
+    "internal_modes": {
+      "mpc": 475
+    },
+    "internal_reasons": {
+      "optimal": 475
+    },
+    "import_ms": 23.931299976538867,
+    "first_call_ms": 2.634999982547015,
+    "p95_call_ms": 1.4108400122495366
+  }
+]
