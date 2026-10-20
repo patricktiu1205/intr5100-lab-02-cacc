@@ -1,0 +1,5 @@
+# Optional: confirm the lab permits third-party student-controller packages first.
+# The MPC optimizer has not yet been tested with these packages installed here.
+numpy
+cvxpy
+osqp

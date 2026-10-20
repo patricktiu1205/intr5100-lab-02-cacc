@@ -1,7 +1,12 @@
 # Lab II: IDM-informed predictive PID
 
-Private INTR 5100 lab work. Implements desired-speed PID control for vehicle 2
+INTR 5100 lab work. Implements desired-speed PID control for vehicle 2
 behind an IDM-controlled middle vehicle and a prescribed-speed leader.
+
+The folder now also contains the groupmates' LQI and MPC pairs, preserved unchanged.
+See [six-controller analysis and test plan](CONTROLLER_COMPARISON.md) and the
+[submission index](controllers/README.md). Previous simulation results cover PID
+only; all-six integration results explicitly identify MPC's fallback mode.
 
 ## Status
 

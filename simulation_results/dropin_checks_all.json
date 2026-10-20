@@ -1,0 +1,149 @@
+{
+  "shared_environment_unchanged": true,
+  "results": [
+    {
+      "scale": 1.0,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 217.09099999861792,
+      "first_control_ms": 217.09099999861792,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\unscaled\\student_controller2.py",
+      "version": "unscaled"
+    },
+    {
+      "scale": 2.8,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 217.39820000948384,
+      "first_control_ms": 217.39820000948384,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\scaled_2p8\\student_controller2.py",
+      "version": "scaled_2p8"
+    },
+    {
+      "scale": 1.0,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 229.87639997154474,
+      "first_control_ms": 229.87639997154474,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\lqi\\unscaled\\student_controller2.py",
+      "version": "lqi/unscaled"
+    },
+    {
+      "scale": 2.8,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 223.2489999732934,
+      "first_control_ms": 223.2489999732934,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\lqi\\scaled_2p8\\student_controller2.py",
+      "version": "lqi/scaled_2p8"
+    },
+    {
+      "scale": 1.0,
+      "internal_modes": {
+        "fallback": 30
+      },
+      "max_control_ms": 1.2356999795883894,
+      "first_control_ms": 1.2356999795883894,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\mpc\\unscaled\\student_controller2.py",
+      "version": "mpc/unscaled"
+    },
+    {
+      "scale": 2.8,
+      "internal_modes": {
+        "fallback": 30
+      },
+      "max_control_ms": 1.252500049304217,
+      "first_control_ms": 1.252500049304217,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "C:\\Users\\main\\Documents\\courses\\intr5100\\Labs\\Lab 02\\.dropin_tmp\\mpc\\scaled_2p8\\student_controller2.py",
+      "version": "mpc/scaled_2p8"
+    }
+  ]
+}

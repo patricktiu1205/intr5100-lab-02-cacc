@@ -10,6 +10,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import argparse
 
 ROOT = Path(__file__).resolve().parents[1]
 SHARED = ROOT.parent/'Shared Environment'
@@ -58,6 +59,10 @@ with patch.object(QMessageBox,'warning',side_effect=lambda *a: messages.append(s
     w.last_control_mono=None
     sec=w.control_sections[-1]
     clock=[100.]
+    if hasattr(submission,'_CLOCK'):
+        submission._CLOCK=lambda:clock[0]
+    modes=[]
+    durations=[]
     def telemetry(offsets,seq):
         for role,offset in zip(w.roles,offsets):
             x,y=xy(w.route,offset)
@@ -68,7 +73,10 @@ with patch.object(QMessageBox,'warning',side_effect=lambda *a: messages.append(s
             clock[0]=100+n*.2
             telemetry([sec.start_s+1900+n*5,sec.start_s+1200+n*5,sec.start_s+500+n*5],n)
             w._record_states()
+            started=time.perf_counter()
             w._control_step()
+            durations.append(1000*(time.perf_counter()-started))
+            modes.append(getattr(submission.student_control,'last_debug',{}).get('mode','feedback'))
         assert w.recorder.command_rows[-1]['mode']=='student_straight'
         assert w.recorder.command_rows[-2]['mode']=='idm_straight'
         # Leader on a different straight: middle fallback, student still active.
@@ -96,10 +104,17 @@ with patch.object(QMessageBox,'warning',side_effect=lambda *a: messages.append(s
         telemetry([sec.start_s+1900,sec.start_s+1200,sec.start_s+500],34)
         w._record_states();w._control_step()
         assert w.recorder.command_rows[-1]['mode']=='student_straight'
-        assert submission._controller.history_len==3
+        if hasattr(submission,'_controller'):
+            assert submission._controller.history_len==3
+        else:
+            assert submission._CACHE['history_len']==3
     assert 'student_fallback' not in [r['mode'] for r in w.recorder.command_rows]
     assert not messages,messages
-    result=dict(scale=submission.GAMMA,commands=len(w.command_clients['student'].commands),
+    result=dict(scale=getattr(submission,'GAMMA',getattr(submission,'SPEED_SCALE',1.)),
+        internal_modes={mode:modes.count(mode) for mode in set(modes)},
+        max_control_ms=max(durations),first_control_ms=durations[0],
+        mpc_engine_available=getattr(submission,'_ENGINE',None) is not None,
+        commands=len(w.command_clients['student'].commands),
         route_valid=w.route_valid,checks=['TA import','Qt construction','real route load',
         'IDM/student active','middle fallback','student bypass','re-entry',
         'sensor shield','new-run reset'],module_path=str(submission.__file__))
@@ -115,10 +130,16 @@ def fingerprints():
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--all',action='store_true',help='Check all six group controllers')
+    args=parser.parse_args()
     before=fingerprints()
     results=[]
     scratch=ROOT/'.dropin_tmp'
-    for version in ('unscaled','scaled_2p8'):
+    versions=['unscaled','scaled_2p8']
+    if args.all:
+        versions += ['lqi/unscaled','lqi/scaled_2p8','mpc/unscaled','mpc/scaled_2p8']
+    for version in versions:
         folder=scratch/version
         folder.mkdir(parents=True,exist_ok=True)
         for p in SHARED.iterdir():
@@ -138,7 +159,8 @@ def main():
         results.append(result)
         print(json.dumps(result))
     assert before==fingerprints(),'Original Shared Environment changed'
-    (ROOT/'simulation_results/dropin_checks.json').write_text(
+    output='dropin_checks_all.json' if args.all else 'dropin_checks.json'
+    (ROOT/'simulation_results'/output).write_text(
         json.dumps(dict(shared_environment_unchanged=True,results=results),indent=2),encoding='utf-8')
 
 
