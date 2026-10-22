@@ -1,0 +1,149 @@
+{
+  "shared_environment_unchanged": true,
+  "results": [
+    {
+      "scale": 1.0,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 128.52587499946821,
+      "first_control_ms": 128.52587499946821,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "pid/scale_1/student_controller2.py",
+      "version": "pid/scale_1"
+    },
+    {
+      "scale": 2.8,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 121.58875000022817,
+      "first_control_ms": 121.58875000022817,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "pid/scale_2p8/student_controller2.py",
+      "version": "pid/scale_2p8"
+    },
+    {
+      "scale": 1.0,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 122.46941700141178,
+      "first_control_ms": 122.46941700141178,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "lqi/scale_1/student_controller2.py",
+      "version": "lqi/scale_1"
+    },
+    {
+      "scale": 2.8,
+      "internal_modes": {
+        "feedback": 30
+      },
+      "max_control_ms": 123.25537499964412,
+      "first_control_ms": 123.25537499964412,
+      "mpc_engine_available": false,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "lqi/scale_2p8/student_controller2.py",
+      "version": "lqi/scale_2p8"
+    },
+    {
+      "scale": 1.0,
+      "internal_modes": {
+        "mpc": 30
+      },
+      "max_control_ms": 2.17812499977299,
+      "first_control_ms": 2.17812499977299,
+      "mpc_engine_available": true,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "mpc/scale_1/student_controller2.py",
+      "version": "mpc/scale_1"
+    },
+    {
+      "scale": 2.8,
+      "internal_modes": {
+        "mpc": 30
+      },
+      "max_control_ms": 2.0325000004959293,
+      "first_control_ms": 2.0325000004959293,
+      "mpc_engine_available": true,
+      "commands": 34,
+      "route_valid": true,
+      "checks": [
+        "TA import",
+        "Qt construction",
+        "real route load",
+        "IDM/student active",
+        "middle fallback",
+        "student bypass",
+        "re-entry",
+        "sensor shield",
+        "new-run reset"
+      ],
+      "module_path": "mpc/scale_2p8/student_controller2.py",
+      "version": "mpc/scale_2p8"
+    }
+  ]
+}
