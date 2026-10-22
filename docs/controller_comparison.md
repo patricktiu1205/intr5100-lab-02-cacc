@@ -97,7 +97,7 @@ MPC optimizer is not compliant. Running its fallback does not turn the run into
 an MPC experiment. Resolve permitted packages with the TA or groupmate before
 treating it as an eligible MPC submission. Do not quietly relabel fallback runs.
 
-Optional optimizer dependencies are listed in `requirements-mpc.txt`; they have
+Optional optimizer dependencies are listed in `requirements_mpc.txt`; they have
 not been installed or validated in the current compatibility run.
 
 ## Shared Environment compatibility results

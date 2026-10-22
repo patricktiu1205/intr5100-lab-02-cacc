@@ -1,5 +1,5 @@
 # Optional optimizer dependencies; without them the internal fallback may run.
-# Used for the all-six offline comparison; package versions are in requirements-lock.txt.
+# Used for the all-six offline comparison; package versions are in requirements_lock.txt.
 numpy
 cvxpy
 osqp

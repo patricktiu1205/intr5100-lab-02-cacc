@@ -93,7 +93,7 @@ def main():
         '- No gains or scaling formulas were changed, and no automatic tuning was performed.',
         '- Simulated safety outcomes do not guarantee physical safety or select the correct scaling assumption.', '',
         '## Reproduce','', '```sh',
-        'python -m pip install -r requirements-mpc.txt',
+        'python -m pip install -r requirements_mpc.txt',
         'python src/simulate_six_controllers.py',
         'python src/summarize_six_controller_simulations.py', '```', '',
         'Files: [full metrics](../simulation_results/all_six/metrics.json), '

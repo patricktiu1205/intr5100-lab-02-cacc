@@ -273,7 +273,7 @@ def main():
 
         # Start from the retained draft to preserve package/theme relationships; keep
         # the original file untouched. Explicit style alignment supersedes its geometry.
-        ref=ROOT/'report/archive/lab_02_report_draft_2026-10-20.docx'
+        ref=ROOT/'report/archive/lab_02_report_draft_20261020.docx'
         original_bytes=ref.read_bytes()
         doc=Document(io.BytesIO(original_bytes))
         sect=deepcopy(doc.sections[0]._sectPr)

@@ -1,0 +1,14 @@
+{
+  "folder_names": {
+    "Lab_01_Calibration": "lab_01_calibration",
+    "Lab_02_CACC": "lab_02_cacc"
+  },
+  "renamed_paths": {
+    "requirements-gui.txt": "requirements_gui.txt",
+    "requirements-lock.txt": "requirements_lock.txt",
+    "requirements-mpc.txt": "requirements_mpc.txt",
+    "report/archive/build_report_2026-10-20.py": "report/archive/build_report_20261020.py",
+    "report/archive/lab_02_report_draft_2026-10-20.docx": "report/archive/lab_02_report_draft_20261020.docx"
+  },
+  "policy": "Lowercase snake_case descriptive paths; YYYYMMDD document dates. Preserve recorded timestamps, dataset pair IDs, method IDs, standard README/AGENTS names and required deployment filenames. Archived file contents are unchanged."
+}

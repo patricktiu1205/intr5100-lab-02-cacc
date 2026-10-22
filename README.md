@@ -71,3 +71,5 @@ To submit a candidate, choose its file in [the controller index](controllers/REA
 Start with [the three-controller analysis](docs/three_controller_analysis.md), [PID/MPC comparison](docs/pid_mpc_comparison.md), [six-controller simulations](docs/six_controller_simulation_results.md) and [PID design](docs/pid_controller_design.md). These document completed analyses. Running their simulation scripts creates new numerical outputs; it is unnecessary for rebuilding the current report.
 
 The original Git history is preserved. The repository was renamed from `intr5100-lab2-pid` to `intr5100-lab-02-cacc` to reflect its full scope. Research PDFs and supplied course files retain their original attribution; no new redistribution license is assigned to them.
+
+Naming convention: lowercase snake_case for descriptive files and folders; use `lab_01` / `lab_02` prefixes on lab deliverables and `YYYYMMDD` for document dates. Preserve recorded timestamps, dataset/method identifiers, standard `README.md` / `AGENTS.md` and required deployment filenames. See `review/naming_changes.json` for the rename map.

@@ -8,3 +8,5 @@
 - Keep a standalone clone functional: no links to files outside the repository and no dependencies on a sibling course folder.
 - In the full course workspace the course-root `environment.yml` is authoritative. Sync its repository copy before publishing.
 - Remove temporary build files, page previews, test sandboxes, caches and uploaded ZIPs after their contents have been verified. Keep diagnostic evidence, scientific data/results, source files and final deliverables.
+
+Naming convention: lowercase snake_case for descriptive files and folders; use `lab_01` / `lab_02` prefixes on lab deliverables and `YYYYMMDD` for document dates. Preserve recorded timestamps, dataset/method identifiers, standard `README.md` / `AGENTS.md` and required deployment filenames. See `review/naming_changes.json` for the rename map.

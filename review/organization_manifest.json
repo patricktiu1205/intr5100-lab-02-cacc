@@ -3,11 +3,11 @@
   "moves": {
     "Lab_II_Group4_Report.pdf": "report/lab_02_report.pdf",
     "Lab_II_Group4_Report.docx": "report/lab_02_report.docx",
-    "Lab_II_Group4_Report_Draft.docx": "report/archive/lab_02_report_draft_2026-10-20.docx",
+    "Lab_II_Group4_Report_Draft.docx": "report/archive/lab_02_report_draft_20261020.docx",
     "Lab_02_Guidelines.pdf": "docs/lab_02_guidelines.pdf",
     "latex/main.tex": "report/source/main.tex",
     "report_work/revise_report.py": "src/build_report.py",
-    "report_work/build_report.py": "report/archive/build_report_2026-10-20.py",
+    "report_work/build_report.py": "report/archive/build_report_20261020.py",
     "report_work/artifact.md": "report/source/style_notes.md",
     "report_work/template.pdf": "report/archive/template_reference/lab_01_template.pdf",
     "report_work/template.png": "report/archive/template_reference/lab_01_template.png",

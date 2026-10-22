@@ -79,7 +79,7 @@ Among matching versions averaged across the five scenarios, PID has the lowest s
 ## Reproduce
 
 ```sh
-python -m pip install -r requirements-mpc.txt
+python -m pip install -r requirements_mpc.txt
 python src/simulate_six_controllers.py
 python src/summarize_six_controller_simulations.py
 ```
