@@ -1,0 +1,34 @@
+[
+  {
+    "original_filename": "student_controller2.py",
+    "path": "controllers/mpc/scale_1/student_controller2.py",
+    "method": "mpc",
+    "scale": "unscaled",
+    "sha256": "1695262ef2d09328f2f80e64f37050bc923f1de1babfa616f96873db51e40df3",
+    "original_path": "controllers/mpc/unscaled/student_controller2.py"
+  },
+  {
+    "original_filename": "student_controller2_2.8x.py",
+    "path": "controllers/mpc/scale_2p8/student_controller2.py",
+    "method": "mpc",
+    "scale": "scaled_2p8",
+    "sha256": "347da991f8938a77675dd27fd393509f832d5739a40a581c8e14a3648e5e0d8f",
+    "original_path": "controllers/mpc/scaled_2p8/student_controller2.py"
+  },
+  {
+    "original_filename": "student_controller2 (1).py",
+    "path": "controllers/lqi/scale_1/student_controller2.py",
+    "method": "lqi",
+    "scale": "unscaled",
+    "sha256": "dc2f4ec27f5afdfd271a36786602c4eb36f3b5bc23638f594a46f8ea3f6904b4",
+    "original_path": "controllers/lqi/unscaled/student_controller2.py"
+  },
+  {
+    "original_filename": "student_controller2_2.8x (1).py",
+    "path": "controllers/lqi/scale_2p8/student_controller2.py",
+    "method": "lqi",
+    "scale": "scaled_2p8",
+    "sha256": "a0cc5b7b2ae9f29239a250f6cc99aa7bef7dbdd25e9e2c3532f4212b07c92c3b",
+    "original_path": "controllers/lqi/scaled_2p8/student_controller2.py"
+  }
+]

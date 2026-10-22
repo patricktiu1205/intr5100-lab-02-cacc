@@ -1,0 +1,194 @@
+[
+  {
+    "method": "PID",
+    "event": 1,
+    "gains": {
+      "middle/leader": 1.7789098623631976,
+      "student/middle": 0.8608574525826858,
+      "student/leader": 1.5313878124881983
+    },
+    "moving_samples": 241,
+    "gap_time_median": 4.878965097608745,
+    "space_time_median": 8.737747473053908,
+    "local_density_median": 1.5912035047678028,
+    "local_flow_proxy_median": 0.11444597169738216,
+    "positive_kinetic_variation_per_distance": 6.418822209564328,
+    "retained_pair_distance": 2181.484975050529
+  },
+  {
+    "method": "PID",
+    "event": 2,
+    "gains": {
+      "middle/leader": 0.6964157794371192,
+      "student/middle": 0.8664767814816035,
+      "student/leader": 0.6034281031396772
+    },
+    "moving_samples": 81,
+    "gap_time_median": 3.71425890859374,
+    "space_time_median": 6.3403093287618075,
+    "local_density_median": 1.6728970957667044,
+    "local_flow_proxy_median": 0.15772101141243355,
+    "positive_kinetic_variation_per_distance": 4.6733667573720385,
+    "retained_pair_distance": 839.4259844841181
+  },
+  {
+    "method": "PID",
+    "event": 3,
+    "gains": {
+      "middle/leader": 1.3680741677156554,
+      "student/middle": 0.7757578254597285,
+      "student/leader": 1.0612942414147246
+    },
+    "moving_samples": 202,
+    "gap_time_median": 6.596060403978623,
+    "space_time_median": 9.919897910013866,
+    "local_density_median": 1.3487245933826073,
+    "local_flow_proxy_median": 0.10080749153973972,
+    "positive_kinetic_variation_per_distance": 4.619199920338912,
+    "retained_pair_distance": 1908.7977194622981
+  },
+  {
+    "method": "PID",
+    "event": 4,
+    "gains": {
+      "middle/leader": null,
+      "student/middle": null,
+      "student/leader": null
+    },
+    "moving_samples": 77,
+    "gap_time_median": 4.129502664979252,
+    "space_time_median": 6.431729558021073,
+    "local_density_median": 1.4510672851313275,
+    "local_flow_proxy_median": 0.1554791741442067,
+    "positive_kinetic_variation_per_distance": 1.9781924769136596,
+    "retained_pair_distance": 829.2192924013325
+  },
+  {
+    "method": "MPC",
+    "event": 1,
+    "gains": {
+      "middle/leader": 1.5618920072557938,
+      "student/middle": 0.8979256354316957,
+      "student/leader": 1.4024628730908453
+    },
+    "moving_samples": 233,
+    "gap_time_median": 3.7135011682363577,
+    "space_time_median": 7.51512339790212,
+    "local_density_median": 1.8957517913449835,
+    "local_flow_proxy_median": 0.13306501397956477,
+    "positive_kinetic_variation_per_distance": 4.421813877964602,
+    "retained_pair_distance": 2055.093827217279
+  },
+  {
+    "method": "MPC",
+    "event": 2,
+    "gains": {
+      "middle/leader": 0.4879653612806432,
+      "student/middle": 1.0100705176308902,
+      "student/leader": 0.4928794250546836
+    },
+    "moving_samples": 114,
+    "gap_time_median": 1.7818093151282308,
+    "space_time_median": 3.974631367697839,
+    "local_density_median": 2.1563268729505616,
+    "local_flow_proxy_median": 0.25159591809146403,
+    "positive_kinetic_variation_per_distance": 6.168598259821835,
+    "retained_pair_distance": 1244.4782456236317
+  },
+  {
+    "method": "MPC",
+    "event": 3,
+    "gains": {
+      "middle/leader": 1.3945010322402784,
+      "student/middle": 0.8339941684367327,
+      "student/leader": 1.1630057287673965
+    },
+    "moving_samples": 211,
+    "gap_time_median": 5.237091507069386,
+    "space_time_median": 8.67115744113532,
+    "local_density_median": 1.5839329175082777,
+    "local_flow_proxy_median": 0.11532485793143082,
+    "positive_kinetic_variation_per_distance": 3.9267029375682707,
+    "retained_pair_distance": 2017.5538125638122
+  },
+  {
+    "method": "MPC",
+    "event": 4,
+    "gains": {
+      "middle/leader": null,
+      "student/middle": null,
+      "student/leader": null
+    },
+    "moving_samples": 91,
+    "gap_time_median": 3.1028439347016334,
+    "space_time_median": 5.426580975523067,
+    "local_density_median": 1.7307060579082658,
+    "local_flow_proxy_median": 0.18427809416473512,
+    "positive_kinetic_variation_per_distance": 1.8419865755186124,
+    "retained_pair_distance": 978.9430737258808
+  },
+  {
+    "method": "LQI",
+    "event": 1,
+    "gains": {
+      "middle/leader": 1.588131785201268,
+      "student/middle": 0.8597279868620281,
+      "student/leader": 1.365361342562685
+    },
+    "moving_samples": 271,
+    "gap_time_median": 6.311448696772259,
+    "space_time_median": 11.236155651885799,
+    "local_density_median": 1.4905958774270727,
+    "local_flow_proxy_median": 0.08899841110977907,
+    "positive_kinetic_variation_per_distance": 7.228469271852794,
+    "retained_pair_distance": 2245.3916792630425
+  },
+  {
+    "method": "LQI",
+    "event": 2,
+    "gains": {
+      "middle/leader": 0.7145743711641844,
+      "student/middle": 1.0017065256760909,
+      "student/leader": 0.7157938106760526
+    },
+    "moving_samples": 100,
+    "gap_time_median": 3.9719446700782695,
+    "space_time_median": 6.58783135115432,
+    "local_density_median": 1.5964155202048058,
+    "local_flow_proxy_median": 0.15180745345782953,
+    "positive_kinetic_variation_per_distance": 4.444818326986836,
+    "retained_pair_distance": 1078.0787999149397
+  },
+  {
+    "method": "LQI",
+    "event": 3,
+    "gains": {
+      "middle/leader": 1.507727430000724,
+      "student/middle": 0.7950255869649491,
+      "student/leader": 1.1986818850194798
+    },
+    "moving_samples": 188,
+    "gap_time_median": 6.8645555027404965,
+    "space_time_median": 9.64766686145887,
+    "local_density_median": 1.2095207348574164,
+    "local_flow_proxy_median": 0.10365205222023263,
+    "positive_kinetic_variation_per_distance": 6.357978456748872,
+    "retained_pair_distance": 1910.220498925868
+  },
+  {
+    "method": "LQI",
+    "event": 4,
+    "gains": {
+      "middle/leader": null,
+      "student/middle": null,
+      "student/leader": null
+    },
+    "moving_samples": 93,
+    "gap_time_median": 4.104325904961621,
+    "space_time_median": 6.448286034137402,
+    "local_density_median": 1.4545164397240056,
+    "local_flow_proxy_median": 0.1550799692671778,
+    "positive_kinetic_variation_per_distance": 1.2033082283979464,
+    "retained_pair_distance": 1003.3671934641789
+  }
+]

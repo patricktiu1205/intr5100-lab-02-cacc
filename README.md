@@ -1,140 +1,73 @@
-# Lab II: IDM-informed predictive PID
+# INTR 5100 Lab 02 CACC
 
-INTR 5100 lab work. Implements desired-speed PID control for vehicle 2
-behind an IDM-controlled middle vehicle and a prescribed-speed leader.
+Look-ahead car-following control on the SC2I testbed, comparing predictive PID, LQI and MPC. This repository contains the controller candidates, recorded experiments, saved analyses and revised report.
 
-The folder now also contains the groupmates' LQI and MPC pairs, preserved unchanged.
-See [six-controller analysis and test plan](CONTROLLER_COMPARISON.md) and the
-[submission index](controllers/README.md). Previous simulation results cover PID
-only; initial all-six integration results explicitly identify MPC's fallback mode.
+## Report
 
-For the subsequent full closed-loop comparison, including active MPC optimizers,
-see [all-six simulation results](ALL_SIX_SIMULATION_REPORT.md). Reproduce with
-`src/simulate_all.py` followed by `src/report_all.py`. The six controller files
-remain unchanged.
+- [Report PDF](report/lab_02_report.pdf) and [editable Word version](report/lab_02_report.docx): seven pages, styled consistently with Lab I.
+- [LaTeX source](report/source/main.tex), [report builder](src/build_report.py) and [review notes](review/review_notes.md).
+- [Lab instructions](docs/lab_02_guidelines.pdf).
 
-## Status
+The report uses one Group 4 physical run per controller. Target gaps, initial conditions and native safety thresholds differ. It separates those observations from historical simulations and does not claim a universal controller winner. Physical records, historical results and controller algorithms have not been retuned during organization or report revision.
 
-Implemented and tested offline on Python 3.12. Six automated tests pass; 78
-simulation cases record no collisions or TA spacing-emergency triggers. This is
-an initial implementation with hand-selected gains, not a physical validation or
-a proof of safety/string stability. See [simulation results](SIMULATION_REPORT.md).
+## Repository layout
 
-## Controller versions
+| Folder | Contents |
+| --- | --- |
+| `controllers/` | Six deployment candidates, grouped by method and scale hypothesis |
+| `src/` | Maintained PID source, simulation/analysis tools, report builder and checks |
+| `environment/` | Supplied Lab II support code, GUI entry point and a local route map |
+| `data/raw/` | Three Group 4 recordings plus the excluded deployment-error recording, with source manifests |
+| `results/` | Recorded-run analyses, aligned event CSVs and saved recorded-input simulations |
+| `simulation_results/` | Historical standalone and six-controller simulation outputs |
+| `diagnostics/` | Earlier deployment-error diagnostics |
+| `report/` | Current PDF/DOCX, source/figures and archived report/template evidence |
+| `docs/` | Controller design, lab instructions and analysis summaries |
+| `references/` | Research papers and reading guide |
+| `review/` | Review findings, organization records and verification evidence |
 
-| File | Telemetry factor gamma | Command factor beta |
-|---|---:|---:|
-| `controllers/unscaled/student_controller2.py` | 1 | 1 |
-| `controllers/scaled_2p8/student_controller2.py` | 2.8 | 2.8 |
+Folders and descriptive filenames use lowercase snake_case. `README.md`, `AGENTS.md`, dependency manifests and the TA-required `student_controller2.py` retain their conventional names. The `scale_1` and `scale_2p8` labels describe telemetry/command hypotheses, not established physical conversion factors.
 
-Both are standalone files with the required `student_control(..., history=None)`
-interface. For TA deployment, copy **one** version next to the supplied experiment
-files using the name `student_controller2.py`. Supporting files must be unchanged.
-The original shared template in the course folder has not been replaced.
+## Shared course environment
 
-The empirical 2.8 ratio is specific to Lab I. Its cause and the desired-speed
-command scale are unresolved. Gamma converts reported speed to coordinate speed;
-beta maps commands to coordinate-speed targets. They are separate parameters,
-paired provisionally in these two versions. Position-derived speeds must never
-receive another 2.8 multiplication.
+Use the single Conda environment for all INTR 5100 work:
 
-## How it works
-
-1. Project current positions to the supplied closed route; calculate bumper gaps.
-2. Fit recent velocity history to estimate leader acceleration.
-3. Replicate the default middle IDM's command calculation in its original units.
-4. Roll out predicted middle motion using a short horizon and assumed response lag.
-5. Blend current and predicted middle speed; add measured-gap PID correction.
-6. Divide coordinate-speed output by beta; apply output limits and closing protection.
-
-The PID uses a 300-coordinate-unit standstill gap, 1.8 s headway, and initial gains
-Kp=0.12/s, Ki=0.002/s², Kd=0.08. The prediction horizon is 0.8 s, blend weight 0.45,
-and assumed response lag 0.5 s. These are provisional design choices, not optimized
-gains or measurements of the platform. Configuration is in `src/controller.py`.
-
-Integral anti-windup, filtered derivative, elapsed-time handling, inactive-interval
-restart, stale-telemetry stopping, and present center-sensor checks are included.
-The local safety envelope is heuristic; the TA's safety shield remains external.
-
-See [the design plan](PID_Controller_Plan.md) for equations and assumptions.
-
-## Isolated setup (Windows PowerShell)
-
-Use a dedicated environment, not the Lab I environment:
-
-```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```sh
+conda activate intr5100
 ```
 
-`requirements.txt` gives compatible dependency ranges; `requirements-lock.txt`
-records exact versions used for this run. Install the lock instead for replication.
-The offline tests do not require Qt, a running GUI, vehicle IPs, or network access.
+For a standalone clone, create that same environment if needed:
 
-## Rebuild, test, and simulate
-
-Run from this repository's root:
-
-```powershell
-.\.venv\Scripts\python.exe src/build_variants.py
-.\.venv\Scripts\python.exe -m unittest discover -s src -p "test_*.py" -v
-.\.venv\Scripts\python.exe src/simulate.py
-.\.venv\Scripts\python.exe src/make_report.py
+```sh
+conda env create -f environment.yml
+conda activate intr5100
 ```
 
-Simulation uses the original `IDMController` as its middle-controller oracle,
-independent of our replica, and a plant with heterogeneous response lags. It tests
-the two controller assumptions against matching and mismatching plant scales,
-delay/noise, slow response, close starts, abrupt stopping, and independently
-mismatched command scale. Six additional runs use the actual route and default
-one-shot leader event manager with section switching.
+`environment.yml` is a snapshot of the course-root dependency specification. In the full course folder, maintain that root specification and sync this copy before publishing. The older `requirements*.txt` files record earlier setups and optional dependency groups.
 
-## Drop-in compatibility check
+## Build the report
 
-Both generated files were separately copied into isolated copies of the actual
-Shared Environment and loaded through `ta_experiment2_gui.Experiment2GUI`, with
-Qt offscreen. The actual `_control_step` processed synthetic `VehicleState`
-telemetry and in-memory command sinks. Both passed 34 command cycles covering
-active control, middle fallback, student bypass, re-entry, center-sensor safety,
-and new-run reset, with no controller-error fallback. Original Shared Environment
-files were verified unchanged by SHA-256. No physical/network clients were used.
+From the repository root:
 
-To repeat in the course folder:
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-gui.txt
-.\.venv\Scripts\python.exe src/test_dropin.py
+```sh
+PYTHONDONTWRITEBYTECODE=1 python src/build_report.py
 ```
 
-This check requires the full original `../Shared Environment` folder, including
-the TA GUI files, alongside the repository. The minimal `environment/` copy used
-by offline simulation does not include those GUI entry files. Detailed results:
-`simulation_results/dropin_checks.json`. GUI dependencies are optional for the
-simulation; `requirements-lock.txt` now records the full tested environment.
+The builder reads saved records, verifies their hashes and metrics, produces DOCX/LaTeX/figures, and compiles the PDF using Tectonic. It does not optimize controllers, refit the response model or rerun experimental simulations. Temporary compiler and plotting-cache files are removed automatically. Use `--offline` when the TeX resources are cached, or `--skip-pdf` to build only the editable sources.
 
-## Project contents
+## Verify code and deployment compatibility
 
-- `src/controller.py`: maintained standalone controller source.
-- `controllers/`: generated submission variants; rebuild after source changes.
-- `src/simulate.py`: deterministic longitudinal simulation (seed 5100).
-- `src/test_controller.py`: replica equivalence, interface, lifecycle, and loop checks.
-- `simulation_results/`: metrics, selected traces, and comparison chart.
-- `environment/`: unmodified copies of five supplied support files needed offline.
-- `References/READING_GUIDE.txt`: bibliography, source links, and reading notes.
+```sh
+PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s src -p test_pid_controller.py -v
+PYTHONDONTWRITEBYTECODE=1 python src/verify_controller_integration.py --all
+```
 
-Downloaded research PDFs and the lab guideline are excluded from Git. The supplied
-environment code/map are course materials included here for private reproducibility;
-no public redistribution license is asserted. No license is assigned to those files.
+The six unit checks cover the PID/TA IDM replica, state/history handling, route logic, stale telemetry, standalone imports and a synthetic closed-loop check. The GUI compatibility check uses copied support files, offscreen Qt, synthetic telemetry and in-memory command sinks. It opens no vehicle/network clients, removes its temporary copies and writes diagnostics to `review/dropin_checks.json`, leaving historical scientific outputs unchanged.
 
-## Known limits and lab checklist
+To submit a candidate, choose its file in [the controller index](controllers/README.md), copy it beside the TA entry point as `student_controller2.py`, and restart the application. MPC needs NumPy, CVXPY and OSQP for optimization; its internal fallback is a separate operating mode.
 
-- Confirm actual TA IDM and route settings match defaults.
-- Identify command response, telemetry scale, and delay before trusting predictions.
-- Shadow IDM state and phase are approximate because the real private command memory
-  is not supplied. Future sensor overrides cannot be predicted.
-- Histories are bounded and current pose ages are handled, but this is not a full
-  delayed-state observer. Prediction depends on a simple leader extrapolation.
-- Physical lateral dynamics, localization faults, packet-loss patterns, and future
-  range-sensor readings are not simulated. The route model imposes perfect tracking.
-- Metrics are finite-scenario observations; spacing and smoothness trade off.
-- Each variant is a candidate for supervised lab testing, not an approved deployment.
+## Historical analysis
+
+Start with [the three-controller analysis](docs/three_controller_analysis.md), [PID/MPC comparison](docs/pid_mpc_comparison.md), [six-controller simulations](docs/six_controller_simulation_results.md) and [PID design](docs/pid_controller_design.md). These document completed analyses. Running their simulation scripts creates new numerical outputs; it is unnecessary for rebuilding the current report.
+
+The original Git history is preserved. The repository was renamed from `intr5100-lab2-pid` to `intr5100-lab-02-cacc` to reflect its full scope. Research PDFs and supplied course files retain their original attribution; no new redistribution license is assigned to them.

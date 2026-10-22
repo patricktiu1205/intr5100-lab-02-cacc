@@ -1,0 +1,128 @@
+Lab II: PID, look-ahead CACC, and trajectory prediction references
+Retrieved: 2026-10-19
+
+Six publicly accessible PDFs are saved alongside this guide. They were checked
+with a PDF reader for page count and title. This is an initial literature
+selection, not a completed critical review or a controller implementation.
+
+Suggested reading order: 01 -> 02 -> 05 -> 03 -> 06 -> 04.
+
+01_naus_2010_cacc_design_and_experiments.pdf (7 pages)
+G. J. L. Naus, R. P. A. Vugts, J. Ploeg, M. J. G. van de Molengraft,
+and M. Steinbuch. Cooperative adaptive cruise control, design and experiments.
+2010 American Control Conference, pp. 6145-6150.
+DOI: https://doi.org/10.1109/ACC.2010.5531596
+PDF: https://pure.tue.nl/ws/portalfiles/portal/2993085/573346213679892.pdf
+Version: university-hosted accepted manuscript, with repository cover sheet.
+Focus: time-headway spacing, filtered velocity, PD feedback, preceding-vehicle
+acceleration feedforward, communication delay, and experimental string stability.
+Use for our discussion: establish the feedback/feedforward structure before
+deciding whether integral action is useful. Its communicated input is acceleration;
+our lab exposes velocity and position histories, so acceleration needs estimation.
+
+02_cantas_2019_cacc_design_and_implementation_arxiv2023.pdf (10 pages)
+Mustafa Ridvan Cantas, Sukru Yaren Gelbal, Levent Guvenc, Bilin Aksun Guvenc.
+Cooperative Adaptive Cruise Control Design and Implementation.
+SAE Technical Paper 2019-01-0496; author manuscript deposited on arXiv in 2023.
+DOI: https://doi.org/10.4271/2019-01-0496
+Record: https://arxiv.org/abs/2306.08182
+PDF: https://arxiv.org/pdf/2306.08182
+Focus: practical feedforward PD CACC on a Ford Fusion, including vehicle dynamics
+and curved-road target-detection issues.
+Use for our discussion: distinguish high-level spacing control from the vehicle's
+lower-level actuation. Our output is desired speed; direct acceleration or throttle
+formulas cannot be transferred without adapting the interface and dynamics.
+
+03_wu_2019_cacc_adaptive_kalman_filter.pdf (11 pages)
+Chaoxian Wu, Yuan Lin, Azim Eskandarian.
+Cooperative Adaptive Cruise Control With Adaptive Kalman Filter Subject to
+Temporary Communication Loss. IEEE Access, 2019.
+DOI: https://doi.org/10.1109/ACCESS.2019.2928004
+Record: https://vtechworks.lib.vt.edu/items/a0e92439-5432-4f06-8d9a-52cf0d079ef5
+PDF: https://vtechworks.lib.vt.edu/bitstreams/0d5190a2-f476-4270-94a3-25f5fef3f7f3/download
+Focus: adaptive Kalman estimation of preceding-vehicle acceleration for feedforward
+during communication loss; includes mobile-robot experiments and simulations.
+Use for our discussion: history should support filtered state estimates, not just
+raw differences between noisy measurements. This paper addresses one preceding
+vehicle; extending an estimator to both lab vehicles is our design choice.
+
+04_mosharafian_2021_gp_predictive_cacc.pdf (7 pages)
+Sahand Mosharafian, Mahdi Razzaghpour, Yaser P. Fallah,
+Javad Mohammadpour Velni.
+Gaussian Process based Stochastic Model Predictive Control for Cooperative
+Adaptive Cruise Control. 2021 IEEE Vehicular Networking Conference.
+Record: https://arxiv.org/abs/2111.07162
+PDF: https://arxiv.org/pdf/2111.07162
+Version: arXiv manuscript.
+Focus: Gaussian-process speed-trajectory prediction and uncertainty within
+stochastic MPC under low-rate/intermittent communication.
+Use for our discussion: optional background for history-based forecasting and
+prediction uncertainty. It is an MPC paper, not evidence that a predictive PID
+inherits its guarantees. A short-horizon trend predictor is a simpler candidate
+for our PID work, but would need its own evaluation.
+
+05_wang_2020_cacc_communication_constraints.pdf (25 pages)
+Chaojie Wang, Siyuan Gong, Anye Zhou, Tao Li, Srinivas Peeta.
+Cooperative adaptive cruise control for connected autonomous vehicles by
+factoring communication-related constraints.
+Journal record: Transportation Research Part C, 113 (2020), pp. 124-145.
+DOI: https://doi.org/10.1016/j.trc.2019.04.010
+PDF: https://sites.gatech.edu/peeta/files/2021/01/2020-Wang-Gong-Zhou-Li-Peeta-TR-C.pdf
+Version note: author-hosted manuscript has ISTTT/conference-style front matter;
+the filename identifies the 2020 journal record, not a verified version of record.
+Focus: adaptive PD feedback and acceleration feedforward with two-predecessor
+information, plus optimization of communication topology.
+Use for our discussion: especially relevant to our leader -> middle -> student
+configuration. Read the controller section for how both predecessors contribute.
+Topology optimization is outside our initial PID scope.
+
+06_tamilarasan_2023_cacc_controller_gains_driveability.pdf (11 pages)
+Santhosh Tamilarasan, Levent Guvenc.
+Impact of Different Desired Velocity Profiles and Controller Gains on Convoy
+Driveability of Cooperative Adaptive Cruise Control Operated Platoons.
+Record: https://arxiv.org/abs/2306.01971
+PDF: https://arxiv.org/pdf/2306.01971
+Version: arXiv manuscript deposited in 2023; deposit year is not asserted to be
+the original publication year.
+Focus: simulation of PD-type CACC, gain selection using a robust PID design
+approach, and the effects of reference trajectories on driveability.
+Use for our discussion: evaluate acceleration and smoothness alongside spacing
+error. Do not copy gains from a different vehicle model or unit convention.
+
+Additional relevant sources (links only; PDFs not downloaded)
+
+Riccardo Dona, Konstantinos Mattas, Yinglong He, Giovanni Albano, Biagio Ciuffo.
+Multianticipation for string stable Adaptive Cruise Control and increased motorway
+capacity without vehicle-to-vehicle communication. Transportation Research Part C,
+140 (2022), 103687.
+https://doi.org/10.1016/j.trc.2022.103687
+Open full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC9231564/
+Useful companion for the benefit of observing two vehicles ahead; its sensing
+setup differs from our connected lab setup.
+
+Mingyang Zhu, Gangfeng Tan. Research on Cooperative Adaptive Cruise Control
+(CACC) Based on Fuzzy PID Algorithm. SAE Technical Paper 2023-01-0682 (2023).
+https://doi.org/10.4271/2023-01-0682
+Publisher record: https://saemobilus.sae.org/papers/research-cooperative-adaptive-cruise-control-cacc-based-fuzzy-pid-algorithm-2023-01-0682
+Publisher abstract inspected; full text requires access and was not downloaded.
+Relevant to PID specifically, but fuzzy gain adaptation is beyond a basic PID.
+
+Lab-specific scaling: a separate implementation question
+
+The empirical factor of approximately 2.8 comes from our Lab I observations.
+These papers do not establish its cause or the Lab II desired-speed command scale.
+Keep reported velocity, position-derived speed, and desired-speed commands distinct.
+Position-derived speed already has coordinate-distance/second units: do not multiply
+it by 2.8 again. Treat the telemetry conversion and command conversion as separate
+assumptions until the lab platform's behavior is verified. Prepare the requested
+scaled and unscaled versions without presenting either as settled physics.
+
+Questions to resolve through the literature discussion
+
+1. Should PID produce desired speed directly, or acceleration integrated to speed?
+2. How should leader and middle information be combined while preserving gap control?
+3. Which history-based estimate is robust enough for the available sampling cadence?
+4. Does integral action reduce persistent bias enough to justify windup handling?
+5. How will spacing error, disturbance amplification, comfort, and safety be evaluated?
+6. Which theoretical assumptions survive section switching, delay, saturation,
+   heterogeneous vehicles, and the lab's lower-level speed controller?

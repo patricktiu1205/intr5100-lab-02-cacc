@@ -1,0 +1,46 @@
+{
+  "original_archive": "experiment2_20261020_135916.zip",
+  "archive_sha256": "36cadfbdb55314fe8d1561b95732e3a7406ebed22ec25f2b02be05fca2f7c03a",
+  "files": [
+    {
+      "file": "control_straight_trajectory.csv",
+      "bytes": 1841091,
+      "sha256": "c2363ce267e5a139e9bf12c12167f435bda74eab72b2ceeeedfb1bb29932d133"
+    },
+    {
+      "file": "commands.csv",
+      "bytes": 293900,
+      "sha256": "2e11971d457eb838c9bdfdd861f542a7c18af4327b0cc88b0ece717a56a45942"
+    },
+    {
+      "file": "metadata.json",
+      "bytes": 3794,
+      "sha256": "485ec741787bb29ab87df3ca88964b6417f6a74c37dd1b2e799f7d959e431ddf"
+    },
+    {
+      "file": "student_trajectory.csv",
+      "bytes": 1049086,
+      "sha256": "ae77d5bfa1138eec6e1c63982b40188200cdf6dad90ee45e5096176613fa2447"
+    },
+    {
+      "file": "leader_events.csv",
+      "bytes": 65453,
+      "sha256": "b71e40e3d11fe7d5ddf341125f29f09b36b3ac1ca17fabf74a25b76835e9e310"
+    },
+    {
+      "file": "middle_trajectory.csv",
+      "bytes": 1073051,
+      "sha256": "08531a5c808ae9354042fe1486170e7fb09cfac4c201fdda519a2bec8e1ebf58"
+    },
+    {
+      "file": "leader_trajectory.csv",
+      "bytes": 1065983,
+      "sha256": "180bf346481f57539ad3927076c62b327288e8ea6b24bbba8e8378714cae36f1"
+    },
+    {
+      "file": "trajectory.csv",
+      "bytes": 3187562,
+      "sha256": "1a1a65f683591fe05fd4e222fe64b2ab4e301ed9cf80ba6497af4d4786f0768f"
+    }
+  ]
+}

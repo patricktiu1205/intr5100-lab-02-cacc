@@ -1,0 +1,9 @@
+* text=auto eol=lf
+# Keep experimental evidence, deployed candidates and TA support byte-for-byte.
+data/** -text
+results/** -text
+simulation_results/** -text
+diagnostics/** -text
+controllers/** -text
+environment/** -text
+report/archive/** -text

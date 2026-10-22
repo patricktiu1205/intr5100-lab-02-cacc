@@ -1,0 +1,542 @@
+{
+  "plant_fits": {
+    "PID": {
+      "beta": 2.91368986450816,
+      "lag": 0.1,
+      "delay": 0.0,
+      "training_loss": 98.44226090203924,
+      "validation_displacement_rmse": 17.86925228549656,
+      "train_intervals": 75,
+      "validation_intervals": 74,
+      "validation_mean_displacement": 107.26783370323682,
+      "validation_relative_rmse": 0.16658537483783784,
+      "candidate_count": 35
+    },
+    "MPC": {
+      "beta": 2.936963020929756,
+      "lag": 0.1,
+      "delay": 0.1,
+      "training_loss": 76.83685981947126,
+      "validation_displacement_rmse": 17.635638114296526,
+      "train_intervals": 73,
+      "validation_intervals": 76,
+      "validation_mean_displacement": 107.08761250574739,
+      "validation_relative_rmse": 0.16468420297772557,
+      "candidate_count": 35
+    },
+    "LQI": {
+      "beta": 2.973199796689516,
+      "lag": 0.8,
+      "delay": 0.0,
+      "training_loss": 97.41862713222181,
+      "validation_displacement_rmse": 16.461628357241853,
+      "train_intervals": 78,
+      "validation_intervals": 76,
+      "validation_mean_displacement": 103.96101200228622,
+      "validation_relative_rmse": 0.15834424886975748,
+      "candidate_count": 35
+    }
+  },
+  "runs": [
+    {
+      "controller": "PID",
+      "source": "PID",
+      "lag_multiplier": 1.0,
+      "own_rmse": 137.77124440799093,
+      "median_active_gap": 508.07361529132686,
+      "min_gap": 116.18780538409192,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 305,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 315
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 325.5232897541264,
+      "position_rmse_vs_recording": 120.94277544318851
+    },
+    {
+      "controller": "PID",
+      "source": "PID",
+      "lag_multiplier": 0.5,
+      "own_rmse": 138.1955269810514,
+      "median_active_gap": 508.5516279630938,
+      "min_gap": 116.69170867603862,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 305,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 315
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 324.3365649837833,
+      "position_rmse_vs_recording": 120.75399045677122
+    },
+    {
+      "controller": "PID",
+      "source": "PID",
+      "lag_multiplier": 2.0,
+      "own_rmse": 137.5945277769147,
+      "median_active_gap": 509.1565641977395,
+      "min_gap": 115.18163573328638,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 305,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 315
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 327.67587830425873,
+      "position_rmse_vs_recording": 121.9328167521805
+    },
+    {
+      "controller": "MPC",
+      "source": "PID",
+      "lag_multiplier": 1.0,
+      "own_rmse": 79.54977451906868,
+      "median_active_gap": 385.036665494973,
+      "min_gap": 116.18780538409192,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 322,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 9,
+        "mpc": 323
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 214.95091631011746,
+      "position_rmse_vs_recording": 67.0195239914132
+    },
+    {
+      "controller": "MPC",
+      "source": "PID",
+      "lag_multiplier": 0.5,
+      "own_rmse": 79.33405081918727,
+      "median_active_gap": 384.959004064659,
+      "min_gap": 116.69170867603862,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 322,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 9,
+        "mpc": 323
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 212.21242983346747,
+      "position_rmse_vs_recording": 67.1921368158463
+    },
+    {
+      "controller": "MPC",
+      "source": "PID",
+      "lag_multiplier": 2.0,
+      "own_rmse": 80.17377232871222,
+      "median_active_gap": 385.0971716853355,
+      "min_gap": 115.18163573328638,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 322,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 9,
+        "mpc": 323
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 219.71217668690224,
+      "position_rmse_vs_recording": 66.6791512657215
+    },
+    {
+      "controller": "LQI",
+      "source": "PID",
+      "lag_multiplier": 1.0,
+      "own_rmse": 145.9624855799736,
+      "median_active_gap": 460.97344228685324,
+      "min_gap": 116.18780538409192,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 307,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 317
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 329.9445286654882,
+      "position_rmse_vs_recording": 133.24203290797726
+    },
+    {
+      "controller": "LQI",
+      "source": "PID",
+      "lag_multiplier": 0.5,
+      "own_rmse": 145.9697865211784,
+      "median_active_gap": 461.08606641549704,
+      "min_gap": 116.69170867603862,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 307,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 317
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 329.8931992474754,
+      "position_rmse_vs_recording": 132.89037115098736
+    },
+    {
+      "controller": "LQI",
+      "source": "PID",
+      "lag_multiplier": 2.0,
+      "own_rmse": 144.38321631318624,
+      "median_active_gap": 461.9973147705259,
+      "min_gap": 115.18163573328638,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 308,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 318
+      },
+      "filled_gap_samples": 12,
+      "min_gap_after_5s": 331.8901090782074,
+      "position_rmse_vs_recording": 132.80224042810394
+    },
+    {
+      "controller": "PID",
+      "source": "MPC",
+      "lag_multiplier": 1.0,
+      "own_rmse": 113.03430237350493,
+      "median_active_gap": 472.03137571068874,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 324,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 341
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 242.66742560311104,
+      "position_rmse_vs_recording": 161.91422612635495
+    },
+    {
+      "controller": "PID",
+      "source": "MPC",
+      "lag_multiplier": 0.5,
+      "own_rmse": 112.89667030301494,
+      "median_active_gap": 472.4533553481415,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 324,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 341
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 242.52949518179412,
+      "position_rmse_vs_recording": 161.42273459292383
+    },
+    {
+      "controller": "PID",
+      "source": "MPC",
+      "lag_multiplier": 2.0,
+      "own_rmse": 112.86307773228302,
+      "median_active_gap": 472.20954640269883,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 324,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 341
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 244.16666573685507,
+      "position_rmse_vs_recording": 162.64672627255894
+    },
+    {
+      "controller": "MPC",
+      "source": "MPC",
+      "lag_multiplier": 1.0,
+      "own_rmse": 69.3855300493527,
+      "median_active_gap": 384.53062599487384,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 337,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 15,
+        "mpc": 339
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 174.63368625319708,
+      "position_rmse_vs_recording": 79.41073923622938
+    },
+    {
+      "controller": "MPC",
+      "source": "MPC",
+      "lag_multiplier": 0.5,
+      "own_rmse": 69.18569620863394,
+      "median_active_gap": 383.9813069986376,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 337,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 15,
+        "mpc": 339
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 172.97125547633186,
+      "position_rmse_vs_recording": 79.26836658990632
+    },
+    {
+      "controller": "MPC",
+      "source": "MPC",
+      "lag_multiplier": 2.0,
+      "own_rmse": 69.6786280012479,
+      "median_active_gap": 384.96973913995316,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 337,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 15,
+        "mpc": 339
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 176.78875460752897,
+      "position_rmse_vs_recording": 79.48651555403053
+    },
+    {
+      "controller": "LQI",
+      "source": "MPC",
+      "lag_multiplier": 1.0,
+      "own_rmse": 119.86966207521546,
+      "median_active_gap": 469.0668952092856,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 325,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 342
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 244.28941432098145,
+      "position_rmse_vs_recording": 175.57681581508714
+    },
+    {
+      "controller": "LQI",
+      "source": "MPC",
+      "lag_multiplier": 0.5,
+      "own_rmse": 121.60781217393985,
+      "median_active_gap": 466.1159821239489,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 324,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 341
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 243.23259882214734,
+      "position_rmse_vs_recording": 176.49632470705666
+    },
+    {
+      "controller": "LQI",
+      "source": "MPC",
+      "lag_multiplier": 2.0,
+      "own_rmse": 120.01896075254965,
+      "median_active_gap": 471.0056859611832,
+      "min_gap": 103.17672977368784,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 325,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 342
+      },
+      "filled_gap_samples": 25,
+      "min_gap_after_5s": 245.15558079674156,
+      "position_rmse_vs_recording": 174.7977708513567
+    },
+    {
+      "controller": "PID",
+      "source": "LQI",
+      "lag_multiplier": 1.0,
+      "own_rmse": 120.53597192598592,
+      "median_active_gap": 470.3642041627463,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 361,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 361
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 220.26361735156024,
+      "position_rmse_vs_recording": 122.38630184667535
+    },
+    {
+      "controller": "PID",
+      "source": "LQI",
+      "lag_multiplier": 0.5,
+      "own_rmse": 123.50921256889181,
+      "median_active_gap": 465.70772843027953,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 360,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 360
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 219.29618945021684,
+      "position_rmse_vs_recording": 120.75115652352595
+    },
+    {
+      "controller": "PID",
+      "source": "LQI",
+      "lag_multiplier": 2.0,
+      "own_rmse": 115.64874337200456,
+      "median_active_gap": 482.942750686856,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 361,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 361
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 220.91453843360614,
+      "position_rmse_vs_recording": 130.42221360014872
+    },
+    {
+      "controller": "MPC",
+      "source": "LQI",
+      "lag_multiplier": 1.0,
+      "own_rmse": 71.0332902240441,
+      "median_active_gap": 384.28746749042693,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 376,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 2,
+        "mpc": 374
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 166.70199264326584,
+      "position_rmse_vs_recording": 141.45247247880064
+    },
+    {
+      "controller": "MPC",
+      "source": "LQI",
+      "lag_multiplier": 0.5,
+      "own_rmse": 71.88585682905057,
+      "median_active_gap": 381.9504025786682,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 375,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 2,
+        "mpc": 373
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 152.83867594621915,
+      "position_rmse_vs_recording": 141.33476661038313
+    },
+    {
+      "controller": "MPC",
+      "source": "LQI",
+      "lag_multiplier": 2.0,
+      "own_rmse": 69.41716194818157,
+      "median_active_gap": 389.46244033536095,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 375,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "stop": 2,
+        "mpc": 375
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 187.94543492439334,
+      "position_rmse_vs_recording": 141.9712728169522
+    },
+    {
+      "controller": "LQI",
+      "source": "LQI",
+      "lag_multiplier": 1.0,
+      "own_rmse": 133.84360239983943,
+      "median_active_gap": 468.56566932222086,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 363,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 363
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 220.26361735156024,
+      "position_rmse_vs_recording": 101.00077875978732
+    },
+    {
+      "controller": "LQI",
+      "source": "LQI",
+      "lag_multiplier": 0.5,
+      "own_rmse": 137.20784064144186,
+      "median_active_gap": 458.896713888299,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 362,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 362
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 219.4241271100327,
+      "position_rmse_vs_recording": 102.33183978054957
+    },
+    {
+      "controller": "LQI",
+      "source": "LQI",
+      "lag_multiplier": 2.0,
+      "own_rmse": 127.95131059578596,
+      "median_active_gap": 486.04880256974684,
+      "min_gap": 113.24007569432797,
+      "collisions": 0,
+      "shield_samples": 0,
+      "active_samples": 364,
+      "wrapper_errors": 0,
+      "internal_modes": {
+        "feedback": 364
+      },
+      "filled_gap_samples": 17,
+      "min_gap_after_5s": 220.91453843360614,
+      "position_rmse_vs_recording": 100.62810442140209
+    }
+  ],
+  "controller_hashes": {
+    "PID": "4310416fa58929d2c037f04f3a73278ec6546e0a16e1a60a3076bd91c2dc1c41",
+    "MPC": "347da991f8938a77675dd27fd393509f832d5739a40a581c8e14a3648e5e0d8f",
+    "LQI": "a0cc5b7b2ae9f29239a250f6cc99aa7bef7dbdd25e9e2c3532f4212b07c92c3b"
+  }
+}

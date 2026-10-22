@@ -1,0 +1,74 @@
+{
+  "duration": 153.42221403121948,
+  "student_commands": 768,
+  "active_commands": 337,
+  "active_fraction": 0.4388020833333333,
+  "gap_percentiles": {
+    "min": 92.31313620956098,
+    "q25": 371.81978552881367,
+    "median": 415.2822020462786,
+    "q75": 469.39073662162446,
+    "max": 537.8238358977796
+  },
+  "spacing_emergencies": 0,
+  "sensor_emergency_samples": 2,
+  "emergencies": [
+    {
+      "t_from_start": "7.8203370571136475",
+      "reason": "center_sensor_emergency",
+      "spacing": "227.21528802442845",
+      "desired_velocity": "0.0",
+      "v_cmd": "0.0"
+    },
+    {
+      "t_from_start": "8.019896984100342",
+      "reason": "center_sensor_emergency",
+      "spacing": "232.96127764846642",
+      "desired_velocity": "0.0",
+      "v_cmd": "0.0"
+    }
+  ],
+  "approximate_active_target_rmse": 109.20483503270849,
+  "approximate_active_target_bias": -53.535650588382076,
+  "active_nonzero_desired": 322,
+  "max_logged_state_age": 0.4914999008178711,
+  "episodes": [
+    {
+      "start": 0.23301076889038086,
+      "end": 28.414897203445435,
+      "samples": 143,
+      "gap_min": 92.31313620956098,
+      "gap_median": 362.719700616306,
+      "gap_max": 409.32895075544366,
+      "approximate_target_rmse": 115.64461279505302
+    },
+    {
+      "start": 59.01983189582825,
+      "end": 69.22074794769287,
+      "samples": 52,
+      "gap_min": 233.41717220333567,
+      "gap_median": 338.97300510773925,
+      "gap_max": 391.0074525233881,
+      "approximate_target_rmse": 177.24067168168605
+    },
+    {
+      "start": 110.01574802398682,
+      "end": 130.21464490890503,
+      "samples": 102,
+      "gap_min": 466.7772616674356,
+      "gap_median": 490.4403324409632,
+      "gap_max": 537.8238358977796,
+      "approximate_target_rmse": 58.61582417971554
+    },
+    {
+      "start": 145.61677408218384,
+      "end": 153.42221403121948,
+      "samples": 40,
+      "gap_min": 414.60946758428145,
+      "gap_median": 439.86873708625535,
+      "gap_max": 480.5199555839208,
+      "approximate_target_rmse": 55.34650050707504
+    }
+  ],
+  "dt_median": 0.20000695799999946
+}

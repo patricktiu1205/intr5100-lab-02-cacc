@@ -1,0 +1,271 @@
+{
+  "runs": {
+    "PID": {
+      "method": "PID",
+      "duration": 153.42221403121948,
+      "active_calls": 337,
+      "total_calls": 768,
+      "gap_all_median": 415.2822020462786,
+      "active_gap_min": 92.31313620956098,
+      "active_gap_median": 385.4384201634748,
+      "active_gap_max": 537.8238358977796,
+      "active_spacing_flags": 0,
+      "active_sensor_flags": 2,
+      "bypass_sensor_flags": 0,
+      "initial_gap": 117.29640387004656,
+      "dt_median": 0.20000695799999946,
+      "callback_errors": 0,
+      "events": [
+        {
+          "event": 1,
+          "section": 3,
+          "start": 0.3,
+          "end": 28.30000000000001,
+          "samples": 281,
+          "dropped": 1,
+          "gap_min": 92.3131362095628,
+          "gap_median": 366.7389704915222,
+          "gap_max": 411.39853014873734,
+          "own_rmse": 114.48566425845561,
+          "bias": -84.16090032123749,
+          "common_rmse": 114.48566425845561,
+          "reported_speed_ratio": 0.8608574525826858,
+          "middle_reported_std": 14.300621191244568,
+          "entry_gap": 116.43037780354462,
+          "exit_gap": 411.39853014873734,
+          "sensor_grid_samples": 4
+        },
+        {
+          "event": 2,
+          "section": 1,
+          "start": 59.1,
+          "end": 69.20000000000014,
+          "samples": 81,
+          "dropped": 21,
+          "gap_min": 241.2588345115255,
+          "gap_median": 347.7653990377039,
+          "gap_max": 387.237023449743,
+          "own_rmse": 157.33756911418988,
+          "bias": -147.5562493183318,
+          "common_rmse": 157.33756911418988,
+          "reported_speed_ratio": 0.8664767814816035,
+          "middle_reported_std": 4.638405803484781,
+          "entry_gap": 241.4018441686094,
+          "exit_gap": 387.237023449743,
+          "sensor_grid_samples": 0
+        },
+        {
+          "event": 3,
+          "section": 2,
+          "start": 110.1,
+          "end": 130.19999999999885,
+          "samples": 202,
+          "dropped": 0,
+          "gap_min": 467.52612048362425,
+          "gap_median": 491.44122439993225,
+          "gap_max": 530.6094386549521,
+          "own_rmse": 57.20933650296252,
+          "bias": 46.09100700622384,
+          "common_rmse": 57.20933650296252,
+          "reported_speed_ratio": 0.7757578254597285,
+          "middle_reported_std": 8.059771618015356,
+          "entry_gap": 518.6159187798439,
+          "exit_gap": 477.0763099676624,
+          "sensor_grid_samples": 0
+        },
+        {
+          "event": 4,
+          "section": 3,
+          "start": 145.7,
+          "end": 153.29999999999956,
+          "samples": 77,
+          "dropped": 1,
+          "gap_min": 414.04403062035635,
+          "gap_median": 439.1479190846039,
+          "gap_max": 473.4902499960808,
+          "own_rmse": 55.63355321436941,
+          "bias": -54.03713912929627,
+          "common_rmse": 55.63355321436941,
+          "reported_speed_ratio": null,
+          "middle_reported_std": 0.0,
+          "entry_gap": 414.04403062035635,
+          "exit_gap": 455.49432872098623,
+          "sensor_grid_samples": 0
+        }
+      ]
+    },
+    "MPC": {
+      "method": "MPC",
+      "duration": 156.94691514968872,
+      "active_calls": 368,
+      "total_calls": 785,
+      "gap_all_median": 314.0913734012738,
+      "active_gap_min": 103.17672977368966,
+      "active_gap_median": 293.90700672280764,
+      "active_gap_max": 400.51203391271883,
+      "active_spacing_flags": 0,
+      "active_sensor_flags": 0,
+      "bypass_sensor_flags": 1,
+      "initial_gap": 103.17672977368966,
+      "dt_median": 0.19998645899999445,
+      "callback_errors": 0,
+      "events": [
+        {
+          "event": 1,
+          "section": 3,
+          "start": 0.1,
+          "end": 29.800000000000004,
+          "samples": 275,
+          "dropped": 37,
+          "gap_min": 103.17672977368784,
+          "gap_median": 261.8492203197293,
+          "gap_max": 317.1834525373815,
+          "own_rmse": 94.85171370362482,
+          "bias": -84.13669748405434,
+          "common_rmse": 171.87718520797335,
+          "reported_speed_ratio": 0.8979256354316957,
+          "middle_reported_std": 12.112906872787685,
+          "entry_gap": 103.17672977368784,
+          "exit_gap": 315.55263557701255,
+          "sensor_grid_samples": 0
+        },
+        {
+          "event": 2,
+          "section": 1,
+          "start": 61.1,
+          "end": 72.40000000000016,
+          "samples": 114,
+          "dropped": 0,
+          "gap_min": 144.871597761874,
+          "gap_median": 213.7561591900576,
+          "gap_max": 262.18758668416194,
+          "own_rmse": 175.19884959560338,
+          "bias": -170.22900073324024,
+          "common_rmse": 288.4325590766701,
+          "reported_speed_ratio": 1.0100705176308902,
+          "middle_reported_std": 3.575523382279997,
+          "entry_gap": 146.9172060233941,
+          "exit_gap": 262.18758668416194,
+          "sensor_grid_samples": 0
+        },
+        {
+          "event": 3,
+          "section": 2,
+          "start": 112.3,
+          "end": 133.29999999999882,
+          "samples": 211,
+          "dropped": 0,
+          "gap_min": 368.51617029742556,
+          "gap_median": 381.33986859312427,
+          "gap_max": 394.3414979176159,
+          "own_rmse": 37.40784385620496,
+          "bias": 30.244204113543244,
+          "common_rmse": 77.62572829009433,
+          "reported_speed_ratio": 0.8339941684367327,
+          "middle_reported_std": 8.007637382762438,
+          "entry_gap": 372.5595956251309,
+          "exit_gap": 379.4050716029451,
+          "sensor_grid_samples": 0
+        },
+        {
+          "event": 4,
+          "section": 3,
+          "start": 147.8,
+          "end": 156.7999999999995,
+          "samples": 91,
+          "dropped": 1,
+          "gap_min": 305.3080198339303,
+          "gap_median": 327.7988673643413,
+          "gap_max": 378.1401662266144,
+          "own_rmse": 51.95796616351738,
+          "bias": -50.27680972281315,
+          "common_rmse": 164.56927254082666,
+          "reported_speed_ratio": null,
+          "middle_reported_std": 0.0,
+          "entry_gap": 305.6054366050921,
+          "exit_gap": 342.1202973605141,
+          "sensor_grid_samples": 0
+        }
+      ]
+    }
+  },
+  "common_route_windows": [
+    {
+      "event": 1,
+      "section": 3,
+      "route_start": 12766.446866157034,
+      "route_end": 14904.755325647577,
+      "PID": {
+        "samples": 276,
+        "gap_median": 366.0714480291981,
+        "own_rmse": 115.12970118982483,
+        "common_rmse": 115.12970118982483
+      },
+      "MPC": {
+        "samples": 223,
+        "gap_median": 279.9978009154638,
+        "own_rmse": 82.95130590345542,
+        "common_rmse": 168.0722776642471
+      }
+    },
+    {
+      "event": 2,
+      "section": 1,
+      "route_start": 2994.751598433977,
+      "route_end": 4087.180053916767,
+      "PID": {
+        "samples": 81,
+        "gap_median": 347.7653990377039,
+        "own_rmse": 157.33756911418988,
+        "common_rmse": 157.33756911418988
+      },
+      "MPC": {
+        "samples": 99,
+        "gap_median": 208.25448127976415,
+        "own_rmse": 179.3207371273999,
+        "common_rmse": 293.04217805725716
+      }
+    },
+    {
+      "event": 3,
+      "section": 2,
+      "route_start": 8557.0678126776,
+      "route_end": 10465.865532139898,
+      "PID": {
+        "samples": 202,
+        "gap_median": 491.44122439993225,
+        "own_rmse": 57.20933650296252,
+        "common_rmse": 57.20933650296252
+      },
+      "MPC": {
+        "samples": 199,
+        "gap_median": 381.62222375790225,
+        "own_rmse": 38.298762848690224,
+        "common_rmse": 75.2269728936334
+      }
+    },
+    {
+      "event": 4,
+      "section": 3,
+      "route_start": 12299.866297945988,
+      "route_end": 13129.08559034732,
+      "PID": {
+        "samples": 77,
+        "gap_median": 439.1479190846039,
+        "own_rmse": 55.63355321436941,
+        "common_rmse": 55.63355321436941
+      },
+      "MPC": {
+        "samples": 76,
+        "gap_median": 326.42115436312633,
+        "own_rmse": 52.8337356177547,
+        "common_rmse": 165.18204012334584
+      }
+    }
+  ],
+  "setup": {
+    "student_vehicle_changed": false,
+    "pid_emergency_spacing": 80.0,
+    "mpc_emergency_spacing": 50.0
+  }
+}

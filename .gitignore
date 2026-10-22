@@ -1,6 +1,22 @@
+# Local environments and caches
 .venv/
+.conda/
 __pycache__/
+*.py[cod]
 .mplconfig/
-References/*.pdf
-*.pdf
 .dropin_tmp/
+.DS_Store
+.pytest_cache/
+
+# Temporary report and compiler output
+.tmp/
+*.aux
+*.log
+*.out
+*.xdv
+*.synctex.gz
+
+# Machine-specific credentials
+.env
+.env.*
+!.env.example

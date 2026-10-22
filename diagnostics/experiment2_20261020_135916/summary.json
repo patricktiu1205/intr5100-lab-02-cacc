@@ -1,0 +1,45 @@
+{
+  "duration": 169.43208122253418,
+  "commands_per_role": 848,
+  "active_calls": 153,
+  "bypass_calls": 695,
+  "active_desired_values": [
+    0.09
+  ],
+  "active_first": 0.023888111114501953,
+  "active_last": 30.429400205612183,
+  "first_bypass_time": 30.624723196029663,
+  "first_bypass_spacing": 2591.7970544480686,
+  "initial_spacing": 41.4829028071581,
+  "final_spacing": 2913.1063531025866,
+  "student_spacing_emergencies": 18,
+  "dt_median": 0.20004943750006987,
+  "dt_max": 0.23051658399981534,
+  "student_stationary_s_range_first_30": 0.0,
+  "student_reported_speed_max_first_30": 0.0,
+  "steady_speed_ratios": {
+    "leader": {
+      "windows": 15,
+      "median": 2.8213726478105174,
+      "minimum": 2.7074712296612997,
+      "maximum": 3.0997833455497457
+    },
+    "middle": {
+      "windows": 15,
+      "median": 2.8358681251111726,
+      "minimum": 2.789760154782024,
+      "maximum": 2.970913907971704
+    },
+    "student": {
+      "windows": 15,
+      "median": 2.8000861571969,
+      "minimum": 2.766171010969442,
+      "maximum": 2.835458413855364
+    }
+  },
+  "replay_desired_range": [
+    0.0,
+    100.0
+  ],
+  "replay_max_state_age": 0.19059300422668457
+}
